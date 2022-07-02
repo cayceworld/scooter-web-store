@@ -1,0 +1,84 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/global.scss';
+
+
+.navlogo_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  margin-top: 50px;
+  gap: 15px;
+}
+
+
+
+.navlogo__logo {
+  display: flex;
+  align-items: center;
+
+
+  img {
+    width: 100%;
+  }
+}
+
+.navlogo__image {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding: 0 65px 0 0;
+
+  .navlogo__image_img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .navlogo__image_content {
+
+    h3 {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 119.3%;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 119.3%;
+      color: $navLogoText;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+@include for-tablet {
+  .navlogo__image {
+    padding: 0 0 0 0;
+  }
+}
+
+
+@include for-mobile-l {
+  .navlogo_wrapper {
+    margin-top: 50px;
+    padding: 5px 0;
+  }
+
+  .navlogo__image {
+    padding: 0 0 0 0;
+
+    .navlogo__image_content {
+      h3 {
+        display: none;
+      }
+    }
+  }
+}
+
+@include for-mobile-s {
+  .navlogo__image {
+    display: none;
+  }
+}

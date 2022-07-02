@@ -1,0 +1,149 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/global.scss';
+
+.Navbar{
+  position: relative;
+}
+
+.navbar_wrapper {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: $navBarColor;
+  display: flex;
+  z-index: 12;
+
+ 
+
+
+  .container {
+    margin: 12px auto;
+    display: flex;
+    position:relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  .NavIcons {
+    flex: 1 1 27%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 15px;
+    z-index: 12;
+  }
+
+  .Navigation {
+    flex: 1 1 73%;
+  }
+
+  .MobileNavigation {
+    flex: 1 1 10%;
+    display: none;
+    
+  }
+
+
+}
+
+
+.menu {
+  display: flex;
+  gap: 24px;
+
+  .menu__item {
+    a {
+      color: $white;
+    }
+  }
+
+  .menu__item_link {
+    color: $burgerLinkColor;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 22px;
+  }
+
+}
+
+
+
+
+.nav__icon {
+  a {
+    color: $burgerLinkColor;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    line-height: 22px;
+    z-index: 12;
+  }
+}
+
+
+@include for-laptop {
+  .Navigation {
+    display: none;
+  }
+
+  .Navbar {
+    position: relative;
+
+    .container {
+      margin: 4px auto;
+
+    }
+
+    .NavIcons {
+      flex: 1 1 90%;
+      position: absolute;
+      right: 45px;
+      top: 11px;
+    }
+
+    .MobileNavigation {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1 1 10%;
+
+
+      .Hamburger {
+        cursor: pointer;
+        z-index: 12;
+        width: 40px;
+
+      }
+
+
+      .menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: $burgerBackground;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        
+
+        .menu__item {}
+
+      }
+    }
+  }
+
+}
+
+@include for-mobile-m {
+  .NavIcons {
+    > :last-child {
+      display: none;
+    }
+  }
+}
