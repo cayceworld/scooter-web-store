@@ -1,0 +1,81 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/global.scss';
+
+
+.navicons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  z-index: 15;
+
+  li:nth-child(1) {
+    order: 3;
+  }
+
+  li:nth-child(2) {
+    order: 2;
+  }
+
+  li:nth-child(3) {
+    order: 1;
+  }
+}
+
+.navicons__img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(103%) contrast(102%);
+  height: 24px;
+}
+
+.navicons__number {
+  color: $burgerLinkColor;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+  z-index: 12;
+}
+
+.navicons__img_phone {
+  display: none;
+}
+
+
+@include for-laptop-l {
+  .navicons {
+    gap: 9px;
+  }
+
+  .navicons__number {
+    font-size: 16px;
+  }
+}
+
+@include for-laptop {
+  .navicons__number {
+    display: none;
+  }
+
+  .navicons__img_phone {
+    display: block;
+  }
+}
+
+@include for-tablet {
+  .navicons__img {
+    filter: none;
+  }
+
+  .navicons {
+    li:nth-child(1) {
+      order: 1;
+    }
+
+    li:nth-child(2) {
+      order: 2;
+    }
+
+    li:nth-child(3) {
+      order: 3;
+    }
+  }
+}

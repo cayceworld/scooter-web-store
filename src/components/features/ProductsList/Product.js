@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import styles from './ProductList.module.scss';
+import styles from './ProductsList.module.scss';
 import { useDispatch } from 'react-redux';
 import { toggleSelect } from '../../../redux/kickscooterReducer';
 
@@ -13,10 +13,10 @@ const Product = props => {
 
   return (
     <div onClick={toggle} key={props.id} className={clsx(styles.products__item, props.isSelect && styles.products__item_active)}>
-      <div className={styles.product__image}>
+      <div className={styles.products__image}>
         <img src={`${process.env.PUBLIC_URL}/images/kickscooters/${props.image}`} />
       </div>
-      <div className={styles.product__title}>
+      <div className={styles.products__title}>
         {props.title}
       </div>
     </div>

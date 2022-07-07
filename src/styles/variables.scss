@@ -18,11 +18,12 @@ $silver: #b4b4b4;
 // ---------- COLOR VARIABLES ----------//
 
 // Burger Menu
-//$burgerBreakpoint: $breakpoint992;
-$burgerMenuIcoColor: $white;
+$burgerMenuIcoColor: $primary;
 $burgerCloseIcoColor: $white;
 $burgerLinkColor: $white;
-$burgerBackground: $primary;
+$burgerBackground: $white;
+$burgerNavBarColor: $white; 
+$burgerLinksColor: $primary; 
 
 // Navbar menu
 $navBarColor: $primary;

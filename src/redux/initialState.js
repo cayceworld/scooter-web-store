@@ -5,7 +5,18 @@ const initialState = {
       title: 'KS E22',
       price: '$960',
       image: 'KS E22.svg',
-      isSelect: true
+      isSelect: true,
+      gift: [
+        {
+          title: 'accesories',
+          image: '',
+        }
+      ],
+      description: [
+        {
+          
+        }
+      ]
     },
     {
       id: '2',

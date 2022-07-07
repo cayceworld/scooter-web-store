@@ -1,11 +1,10 @@
-
-import Header from "../../layouts/Header/Header";
-import SelectedProduct from "../../layouts/SelectedProduct/SelectedProduct";
-
+import Header from '../../views/Header/Header';
+import SelectedProduct from "../../features/SelectedProduct/SelectedProduct";
+import styles from './Home.module.scss'; 
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.home}>
       <Header />
       <SelectedProduct />
     </div>

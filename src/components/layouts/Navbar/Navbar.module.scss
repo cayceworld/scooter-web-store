@@ -1,149 +1,116 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/global.scss';
 
-.Navbar{
-  position: relative;
-}
-
-.navbar_wrapper {
-  position: fixed;
+.navbar {
+  position: sticky;
   top: 0px;
-  left: 0px;
-  width: 100%;
   background-color: $navBarColor;
-  display: flex;
-  z-index: 12;
+  border: 1px solid $primary;
+  z-index: 15;
 
- 
+  /* disable text selection for navbar */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* ----------------- */
 
-
-  .container {
-    margin: 12px auto;
+  .navbar__wrapper {
+    width: 100%;
     display: flex;
-    position:relative;
-    top: 0px;
-    left: 0px;
-  }
-
-  .NavIcons {
-    flex: 1 1 27%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    gap: 15px;
     z-index: 12;
+    margin: 12px auto;
+    position: relative;
   }
 
   .Navigation {
-    flex: 1 1 73%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .MobileNavigation {
-    flex: 1 1 10%;
-    display: none;
-    
-  }
-
-
-}
-
-
-.menu {
-  display: flex;
-  gap: 24px;
-
-  .menu__item {
-    a {
-      color: $white;
-    }
-  }
-
-  .menu__item_link {
-    color: $burgerLinkColor;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.02em;
-    line-height: 22px;
-  }
-
-}
-
-
-
-
-.nav__icon {
-  a {
-    color: $burgerLinkColor;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.02em;
-    line-height: 22px;
-    z-index: 12;
-  }
-}
-
-
-@include for-laptop {
-  .Navigation {
     display: none;
   }
 
-  .Navbar {
-    position: relative;
+  .navlinks {
+    display: flex;
+    gap: 24px;
 
-    .container {
-      margin: 4px auto;
-
+    .navlinks__item {
+      a {
+        color: $navLinkColor;
+      }
     }
 
-    .NavIcons {
-      flex: 1 1 90%;
-      position: absolute;
-      right: 45px;
-      top: 11px;
+    .navlinks__link {
+      color: $burgerLinkColor;
+      font-weight: 400;
+      font-size: 18px;
+      letter-spacing: 0.02em;
+      line-height: 22px;
+    }
+
+  }
+
+}
+
+@include for-laptop-l {
+  .navbar {
+    .navlinks {
+      .navlinks__link {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include for-tablet {
+  .navbar {
+    position: sticky;
+    background-color: $burgerNavBarColor;
+    border: none;
+
+    .Navigation {
+      display: none;
     }
 
     .MobileNavigation {
       display: flex;
       flex-wrap: wrap;
-      flex: 1 1 10%;
+      flex: 1 1 100%;
+      align-items: center;
+      justify-content: space-between;
 
 
-      .Hamburger {
+      .MobileNavigation__burger {
         cursor: pointer;
-        z-index: 12;
+        z-index: 15;
         width: 40px;
-
-      }
-
-
-      .menu {
-        position: fixed;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background: $burgerBackground;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-        
-
-        .menu__item {}
-
+        color: $burgerMenuIcoColor;
       }
     }
-  }
 
-}
+    .navlinks {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background: $burgerBackground;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
 
-@include for-mobile-m {
-  .NavIcons {
-    > :last-child {
-      display: none;
+      .navlinks__item {
+        a {
+          color: $burgerLinksColor;
+        }
+      }
     }
   }
 }

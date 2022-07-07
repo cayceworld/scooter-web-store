@@ -1,14 +1,12 @@
-import styles from './ProductList.module.scss';
+import styles from './ProductsList.module.scss';
 import { useSelector } from "react-redux";
 import { getAllKickscooters } from "../../../redux/kickscooterReducer";
 import Product from './Product';
 
 
-const ProductList = props => {
+const Products = props => {
   const kickscooters = useSelector(getAllKickscooters);
 
-
-  console.log(kickscooters)
 
   return (
     <div className={styles.Products}>
@@ -24,4 +22,4 @@ const ProductList = props => {
   );
 }
 
-export default ProductList;
+export default Products;
