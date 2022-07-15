@@ -1,15 +1,15 @@
 import styles from './ProductsList.module.scss';
 import { useSelector } from "react-redux";
-import { getAllKickscooters } from "../../../redux/kickscooterReducer";
+import { getAllKickscooters } from "../../../redux/kickscooterRedux";
 import Product from './Product';
 
 
-const Products = props => {
+const DesktopProducts = props => {
   const kickscooters = useSelector(getAllKickscooters);
 
 
   return (
-    <div className={styles.Products}>
+    <div className={styles.DesktopProducts}>
       <div className={styles.container}>
         <div className={styles.products__wrapper}>
           {kickscooters.map(kickscooter =>
@@ -22,4 +22,4 @@ const Products = props => {
   );
 }
 
-export default Products;
+export default DesktopProducts;

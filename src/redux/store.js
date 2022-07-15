@@ -1,9 +1,11 @@
 import { createStore, combineReducers } from 'redux';
 import initialState from './initialState.js';
-import kickscooterReducer from './kickscooterReducer.js';
+import kickscooterReducer from './kickscooterRedux';
+import accessoriesReducer from './accessoriesRedux';
 
 const subreducers = {
   kickscooters: kickscooterReducer,
+  accessories: accessoriesReducer, 
 
 }
 

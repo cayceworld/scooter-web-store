@@ -79,3 +79,8 @@
     }
   }
 }
+@include for-mobile-l{
+  .navicons {
+    gap: 5px;
+  }
+}

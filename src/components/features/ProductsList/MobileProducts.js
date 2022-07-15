@@ -1,6 +1,6 @@
 import styles from './ProductsList.module.scss';
 import { useSelector } from "react-redux";
-import { getAllKickscooters } from "../../../redux/kickscooterReducer";
+import { getAllKickscooters } from "../../../redux/kickscooterRedux";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css/navigation';
@@ -13,10 +13,8 @@ const MobileProducts = () => {
     <div className={styles.MobileProducts}>
       <Swiper
         spaceBetween={0}
-        slidesPerView={4}
+        slidesPerView={3}
         navigation
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation]}
       >
         {kickscooters.map(kickscooter =>

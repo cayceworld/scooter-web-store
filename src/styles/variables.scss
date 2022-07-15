@@ -4,14 +4,8 @@
 $primary: #323941;
 $blue: #009EFF;
 $white: #ffffff;
-$black: #1B1B1B;
+$black: #323941;
 $silver: #b4b4b4;
-
-
-
-
-
-
 
 
 
@@ -29,10 +23,19 @@ $burgerLinksColor: $primary;
 $navBarColor: $primary;
 $navLinkColor: $white;
 
-//Navlogo
+// Navlogo
 $navLogoText: $blue;
 
-//Products
+// Products
 $productsBackground: $primary; 
+
+// Button
+$buttonBackground: $blue;
+$buttonColor: $white; 
+
+// Selected product
+$selectedProductText: $black; 
+$selectedProductBorder: $silver; 
+
 
 

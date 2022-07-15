@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.btn {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: $buttonColor;
+  background: $buttonBackground;
+  padding: 15px 0;
+  width: 100%;
+}

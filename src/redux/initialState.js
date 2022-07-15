@@ -3,112 +3,773 @@ const initialState = {
     {
       id: '1',
       title: 'KS E22',
-      price: '$960',
+      price: 960,
       image: 'KS E22.svg',
       isSelect: true,
-      gift: [
-        {
-          title: 'accesories',
-          image: '',
-        }
+      inStock: 19,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+        { image: 'KS E22(0).png' },
+        { image: 'KS E22(1).png' },
+        { image: 'KS E22(2).png' },
+        { image: 'KS E22(3).png' },
+        { image: 'KS E22(4).png' },
+        { image: 'KS E22(5).png' }
+
+
       ],
       description: [
         {
-          
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
         }
-      ]
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
+
     },
     {
       id: '2',
       title: 'KS ES1l',
-      price: '$760',
+      price: 760,
       image: 'KS ES1l.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 25,
+      gift: 'Segway Charger',
+      gallery: [
+
+        { image: 'KS ES2(0).jpg' },
+        { image: 'KS ES2(1).jpg' },
+        { image: 'KS ES2(2).jpg' },
+        { image: 'KS ES2(3).jpg' },
+        { image: 'KS ES2(4).jpg' },
+        { image: 'KS ES2(5).jpg' },
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '3',
       title: 'KS Air t15',
-      price: '$980',
+      price: 980,
       image: 'KS Air t15.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Ninebot Engine Speaker',
+      gallery: [
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '4',
       title: 'KS F30',
-      price: '$1960',
+      price: 1960,
       image: 'KS E22.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: '',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '5',
       title: 'KS E45',
-      price: '$768',
+      price: 768,
       image: 'KS E45.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '6',
       title: 'KS MAX',
-      price: '$910',
+      price: 910,
       image: 'KS MAX.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '7',
       title: 'KS MAX2',
-      price: '$1230',
+      price: 1230,
       image: 'KS MAX2.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '8',
       title: 'KS E22',
-      price: '$960',
+      price: 960,
       image: 'KS E22.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '9',
       title: 'KS ES2',
-      price: '$1250',
+      price: 1250,
       image: 'KS ES2.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '10',
       title: 'KS ES 3',
-      price: '$900',
+      price: 900,
       image: 'KS ES 3.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '11',
       title: 'EKS ZING E8',
-      price: '$2540',
+      price: 2540,
       image: 'EKS ZING E8.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '12',
       title: 'EKS ZING E10',
-      price: '$1960',
+      price: 1960,
       image: 'EKS ZING E10.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '13',
       title: 'EKS ZING E12',
-      price: '$1560',
+      price: 1560,
       image: 'EKS ZING E12.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
     {
       id: '14',
       title: 'KS ES 4',
-      price: '$1290',
+      price: 1290,
       image: 'KS ES 4.svg',
-      isSelect: false
+      isSelect: false,
+      inStock: 0,
+      gift: 'Segway Protective Gear Set',
+      gallery: [
+
+
+
+
+      ],
+      description: [
+        {
+          title: 'Up to 40 miles per charge',
+          subtitle: 'Up to 40 miles of range on a single charge',
+          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+          miles: '40'
+        }
+      ],
+      warranty: [
+        {
+          title: 'Basic 1 year warranty',
+          subtitle: 'One year manufacturer warranty',
+          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+          extend: [
+            {
+
+            }
+          ]
+        }
+      ],
+      delivery: [
+        {
+          title: ' Delivery within 1 business day',
+          subtitle: 'We are in Los Angeles, CA',
+          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
+        }
+      ],
+      support: [
+        {
+          title: 'After Sales Support',
+          subtitle: 'After Sales Support',
+          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
+        }
+      ],
     },
+  ],
+
+  accessories: [
+    {
+      id: '1',
+      title: 'Ninebot Engine Speaker',
+      description: 'The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle accelerator, brake, speed, and other signals',
+      price: 149,
+      image: 'NineboT Engine Speaker.svg',
+      inStock: 2
+    },
+    {
+      id: '2',
+      title: 'Extension Rod',
+      description: 'The Extension Rod helps you to easily maneuver your scooter, so you no longer need to bend over and push it, making it easier to take with you anywhere.',
+      price: 29,
+      image: 'ExtensionRod.svg',
+      inStock: 0
+    },
+    {
+      id: '3',
+      title: 'Segway Protective Gear Set',
+      description: 'The curved, streamlined design of the helmet shell, coupled with the thick, high-quality fabrics create a helmet that is stylish, protective and comfortable to wear.',
+      price: 29,
+      image: 'Segway Protective Gear Set.svg',
+      inStock: 0
+    },
+    {
+      id: '4',
+      title: 'Ninebot Leisure Backpack',
+      description: 'The Ninebot leisure backpack adopts a stylish gray-yellow color contrast, adding a trendy accessory to your wardrobe.',
+      price: 69,
+      image: 'Ninebot Leisure Backpack.svg',
+      inStock: 0
+    },
+    {
+      id: '5',
+      title: 'Segway External Battery',
+      description: ' It is easy to install and increases the range of the ES1, ES2 & E22 to 27.9, 28 and 27 miles respectively and It also increases the speed',
+      price: 249,
+      image: 'Segway External Battery.svg',
+      inStock: 0
+    },
+    {
+      id: '6',
+      title: 'Segway Charger',
+      description: 'Whether at home, the office, or on your KickScooter journey, this Ninebot KickScooter by Segway Charger is designed to provide a safe and stable charge anytime, anywhere.',
+      price: 79,
+      image: 'SegwayCharger.svg',
+      inStock: 0
+    },
+    {
+      id: '7',
+      title: 'Segway Scooter Bag',
+      description: 'Whether at home, the office, or on your KickScooter journey, this Ninebot KickScooter by Segway Charger is designed to provide a safe and stable charge anytime, anywhere.',
+      price: 69,
+      image: 'Segway Scooter Bag.svg',
+      inStock: 0
+    },
+    {
+      id: '8',
+      title: 'Segway Phone Holder',
+      description: 'The dual screw, non-slip design offers ultimate security and versatility. The phone holder is applicable to multiple vehicle series.',
+      price: 29,
+      image: 'Segway Phone Holder.svg',
+      inStock: 0
+    },
+    {
+      id: '9',
+      title: 'Segway Saddle',
+      description: 'This scooter seat is designed to work with the MAX. It offers high quality, comfort and safety that is in line with the MAX KickScooter.',
+      price: 119,
+      image: 'Segway Saddle.svg',
+      inStock: 0
+    }
+
 
   ]
 }

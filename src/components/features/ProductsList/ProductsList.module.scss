@@ -1,7 +1,7 @@
 @import '../../../styles/variables.scss';
 @import '../../../styles/global.scss';
 
-.Products {
+.DesktopProducts {
   background-color: $productsBackground;
 }
 
@@ -38,7 +38,7 @@
   .products__image {
 
     img {
-      //-webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+      -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
       filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
       height: 80px;
 
@@ -75,7 +75,7 @@
 }
 
 @include for-tablet {
-  .Products {
+  .DesktopProducts {
     display: none;
   }
 

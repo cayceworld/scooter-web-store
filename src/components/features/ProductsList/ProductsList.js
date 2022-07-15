@@ -1,11 +1,11 @@
 import MobileProducts from "./MobileProducts";
-import Products from "./Products";
+import DesktopProducts from "./DesktopProducts";
 
 const ProductsList = () => {
   return (
     <>
       <MobileProducts />
-      <Products />
+      <DesktopProducts />
     </>
   );
 }
