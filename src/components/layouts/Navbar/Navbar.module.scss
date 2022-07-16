@@ -114,3 +114,9 @@
     }
   }
 }
+@include for-mobile-m{
+  .MobileNavigation__logo{
+    display: none;
+    border: 1px solid #000;
+  }
+}

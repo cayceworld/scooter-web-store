@@ -4,7 +4,7 @@ import { TbMenu2 } from 'react-icons/tb';
 import { useState, useEffect } from "react";
 import NavIcons from "../NavIcons/NavIcons";
 import Logo from "../../common/Logo/Logo";
-import clsx from 'clsx';
+
 
 const MobileNavigation = () => {
 
@@ -22,7 +22,9 @@ const MobileNavigation = () => {
   return (
     <nav className={styles.MobileNavigation}>
       <TbMenu2 onClick={() => setOpen(!open)} className={styles.MobileNavigation__burger} size='40px' />
-      <Logo />
+      <div className={styles.MobileNavigation__logo}>
+        <Logo />
+      </div>
       <NavIcons />
       {open && <NavLinks />}
     </nav>

@@ -30,24 +30,35 @@
 }
 
 @include for-tablet {
-.gift__wrapper{
-  border: 5px solid $blue;
-  padding: 20px;
-}
-.gift__content{
-  text-align: left;
-  .gift__title{
-    text-transform: uppercase;
-    color: $black;
-    span{
-      color: $blue;
-    }
+  .gift__wrapper {
+    border: 5px solid $blue;
+    padding: 20px;
   }
-  .gift__subtitle{
-    display: block;
-    color: black;
-    font-size: 14px;
+
+  .gift__content {
+    text-align: left;
+
+    .gift__title {
+      text-transform: uppercase;
+      color: $black;
+
+      span {
+        color: $blue;
+      }
+    }
+
+    .gift__subtitle {
+      display: block;
+      color: black;
+      font-size: 14px;
+    }
   }
 }
 
+@include for-mobile-l {
+  .gift__image {
+    img {
+      display: none;
+    }
+  }
 }

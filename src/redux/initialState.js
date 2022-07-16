@@ -116,7 +116,6 @@ const initialState = {
       image: 'KS Air t15.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Ninebot Engine Speaker',
       gallery: [
 
       ],
@@ -211,7 +210,7 @@ const initialState = {
       image: 'KS E45.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -260,7 +259,7 @@ const initialState = {
       image: 'KS MAX.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -309,7 +308,7 @@ const initialState = {
       image: 'KS MAX2.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -358,7 +357,7 @@ const initialState = {
       image: 'KS E22.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -407,7 +406,7 @@ const initialState = {
       image: 'KS ES2.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -456,7 +455,7 @@ const initialState = {
       image: 'KS ES 3.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -505,7 +504,7 @@ const initialState = {
       image: 'EKS ZING E8.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -554,7 +553,7 @@ const initialState = {
       image: 'EKS ZING E10.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -603,7 +602,7 @@ const initialState = {
       image: 'EKS ZING E12.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 
@@ -652,7 +651,7 @@ const initialState = {
       image: 'KS ES 4.svg',
       isSelect: false,
       inStock: 0,
-      gift: 'Segway Protective Gear Set',
+gitf: '',
       gallery: [
 
 

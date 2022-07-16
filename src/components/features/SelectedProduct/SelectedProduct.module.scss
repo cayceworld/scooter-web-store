@@ -7,9 +7,10 @@
 .SelectedProduct__wrapper {
   display: flex;
   gap: 25px;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 24px;
   height: 1200px;
+
 }
 
 .SelectedProduct__content {
@@ -155,7 +156,7 @@
   width: 100%;
 
   >div {
-    width: 500px;
+    max-width: 500px;
   }
 
   img {
@@ -242,5 +243,15 @@
     }
 
 
+  }
+}
+@include for-mobile-l{
+  .SelectedProduct__gallery {
+    >div {
+      max-width: 250px;
+    }
+    img {
+      height: 250px;
+    }
   }
 }
