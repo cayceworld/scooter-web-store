@@ -19,41 +19,32 @@ const initialState = {
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
-
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '40'
+      },
     },
     {
       id: '2',
@@ -74,40 +65,32 @@ const initialState = {
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 2 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 2 years. You can also extend the warranty up to 4 years.',
+        years: '2',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '50'
+      },
     },
     {
       id: '3',
@@ -119,40 +102,32 @@ const initialState = {
       gallery: [
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'consectetur adipisicing ',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'Lorem Lorem, ipsum dolor sit amet.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
+        miles: '25'
+      },
     },
     {
       id: '4',
@@ -168,40 +143,32 @@ const initialState = {
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '40'
+      },
     },
     {
       id: '5',
@@ -210,47 +177,39 @@ const initialState = {
       image: 'KS E45.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'consectetur adipisicing ',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'Lorem Lorem, ipsum dolor sit amet.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 25 miles per charge',
+        subtitle: 'Up to 25 miles of range on a single charge',
+        text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
+        miles: '25'
+      },
     },
     {
       id: '6',
@@ -259,47 +218,39 @@ gitf: '',
       image: 'KS MAX.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '40'
+      },
     },
     {
       id: '7',
@@ -308,47 +259,39 @@ gitf: '',
       image: 'KS MAX2.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'consectetur adipisicing ',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'Lorem Lorem, ipsum dolor sit amet.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 25 miles per charge',
+        subtitle: 'Up to 25 miles of range on a single charge',
+        text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
+        miles: '25'
+      },
     },
     {
       id: '8',
@@ -357,47 +300,39 @@ gitf: '',
       image: 'KS E22.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '40'
+      },
     },
     {
       id: '9',
@@ -406,47 +341,39 @@ gitf: '',
       image: 'KS ES2.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'consectetur adipisicing ',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'Lorem Lorem, ipsum dolor sit amet.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 25 miles per charge',
+        subtitle: 'Up to 25 miles of range on a single charge',
+        text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
+        miles: '25'
+      },
     },
     {
       id: '10',
@@ -455,47 +382,39 @@ gitf: '',
       image: 'KS ES 3.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '40'
+      },
     },
     {
       id: '11',
@@ -504,47 +423,39 @@ gitf: '',
       image: 'EKS ZING E8.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'consectetur adipisicing ',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'Lorem Lorem, ipsum dolor sit amet.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 25 miles per charge',
+        subtitle: 'Up to 25 miles of range on a single charge',
+        text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
+        miles: '25'
+      },
     },
     {
       id: '12',
@@ -553,47 +464,39 @@ gitf: '',
       image: 'EKS ZING E10.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '40'
+      },
     },
     {
       id: '13',
@@ -602,47 +505,39 @@ gitf: '',
       image: 'EKS ZING E12.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'consectetur adipisicing ',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'Lorem Lorem, ipsum dolor sit amet.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 25 miles per charge',
+        subtitle: 'Up to 25 miles of range on a single charge',
+        text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
+        miles: '25'
+      },
     },
     {
       id: '14',
@@ -651,47 +546,39 @@ gitf: '',
       image: 'KS ES 4.svg',
       isSelect: false,
       inStock: 0,
-gitf: '',
+      gitf: '',
       gallery: [
 
 
 
 
       ],
-      description: [
-        {
-          title: 'Up to 40 miles per charge',
-          subtitle: 'Up to 40 miles of range on a single charge',
-          text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
-          miles: '40'
-        }
-      ],
-      warranty: [
-        {
-          title: 'Basic 1 year warranty',
-          subtitle: 'One year manufacturer warranty',
-          text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
-          extend: [
-            {
+      delivery: {
+        title: ' Delivery within 1 business day',
+        subtitle: 'We are in Los Angeles, CA',
+        text: 'Free California 1 day shipping. US Free Shipping 3-5 Days',
+        ico: 'delivery-ico.svg',
+      },
+      warranty: {
+        title: 'Basic 1 year warranty',
+        subtitle: 'One year manufacturer warranty',
+        text: 'The basic warranty is 1 year. You can also extend the warranty up to 4 years.',
+        years: '1',
+        extend: {}
 
-            }
-          ]
-        }
-      ],
-      delivery: [
-        {
-          title: ' Delivery within 1 business day',
-          subtitle: 'We are in Los Angeles, CA',
-          text: 'Free California 1 day shipping. US Free Shipping 3-5 Days'
-        }
-      ],
-      support: [
-        {
-          title: 'After Sales Support',
-          subtitle: 'After Sales Support',
-          text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes'
-        }
-      ],
+      },
+      support: {
+        title: 'After Sales Support',
+        subtitle: 'After Sales Support',
+        text: 'If you have any difficulties with your kickscooter, our specialists will contact you within 15 minutes',
+        ico: 'support-ico.svg'
+      },
+      description: {
+        title: 'Up to 40 miles per charge',
+        subtitle: 'Up to 40 miles of range on a single charge',
+        text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
+        miles: '40'
+      },
     },
   ],
 

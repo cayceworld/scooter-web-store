@@ -1,6 +1,6 @@
-import Navbar from "../../layouts/Navbar/Navbar";
+import Navbar from "../../views/Navbar/Navbar";
 import ProductsList from "../../features/ProductsList/ProductsList";
-import LogoSection from "../../layouts/LogoSection/LogoSection";
+import LogoSection from "../../views/LogoSection/LogoSection";
 
 
 

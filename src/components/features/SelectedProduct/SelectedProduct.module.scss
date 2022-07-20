@@ -9,8 +9,6 @@
   gap: 25px;
   justify-content: center;
   margin-top: 24px;
-  height: 1200px;
-
 }
 
 .SelectedProduct__content {
@@ -199,6 +197,7 @@
       font-size: 20px;
     }
   }
+
   .SelectedProduct__wrapper {
     text-align: center;
   }
@@ -245,11 +244,13 @@
 
   }
 }
-@include for-mobile-l{
+
+@include for-mobile-l {
   .SelectedProduct__gallery {
     >div {
       max-width: 250px;
     }
+
     img {
       height: 250px;
     }

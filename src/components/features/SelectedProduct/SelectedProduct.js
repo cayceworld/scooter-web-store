@@ -6,7 +6,8 @@ import { getSelectedKickscooter } from '../../../redux/kickscooterRedux';
 import { useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 import Gallery from './Gallery';
-import Gift from '../../layouts/Gift/Gift';
+import Gift from '../../views/Gift/Gift';
+import ProductInfo from '../../views/ProductInfo/ProductInfo';
 
 const SelectedProduct = () => {
 
@@ -113,6 +114,7 @@ const SelectedProduct = () => {
             <Gallery kickscooter={kickscooter} />
           </div>}
         </div>
+        <ProductInfo kickscooter={kickscooter} isDesktop={isDesktop}/>
       </div>
     </div>
   );
