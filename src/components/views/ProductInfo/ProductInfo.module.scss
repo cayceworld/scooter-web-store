@@ -33,13 +33,14 @@
 
 
 .ProductInfo__content {
-  background: #f7f7f7;
+  background: #f1f1f1;
   padding: 12px;
   color: #323941;
   display: flex;
   gap: 80px;
   justify-content: space-between;
   flex: 1 1 70%;
+
 
 
 
@@ -127,4 +128,16 @@
       align-items: center;
     }
   }
+
+  .ProductInfo {
+    background: rgba(153, 153, 153, 0.08);
+    .ProductInfo__content {
+      background: none;
+    }
+    .ProductInfo__titles {
+      background: #FFFFFF;;
+    }
+  }
+
+
 }

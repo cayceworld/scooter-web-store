@@ -6,10 +6,13 @@ import LogoSection from "../../views/LogoSection/LogoSection";
 
 
 
-const Header = () => {
+const Header = props => {
+
+  const isDesktop = props.isDesktop; 
+
   return (
     <>
-      <Navbar />
+      <Navbar isDesktop={isDesktop}/>
       <LogoSection />
       <ProductsList />
     </>

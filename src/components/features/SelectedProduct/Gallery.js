@@ -16,7 +16,7 @@ const Gallery = props => {
       >
         {props.kickscooter.gallery.length == 0
           ? <img src={`${process.env.PUBLIC_URL}/images/Kickscooters List/${props.kickscooter.image}`} />
-          : props.kickscooter.gallery.map(image => <SwiperSlide key={image.image} ><img src={`${process.env.PUBLIC_URL}/images/Gallery/${image.image}`} /></SwiperSlide>)
+          : props.kickscooter.gallery.map(image => <SwiperSlide key={image.image} ><img src={`${process.env.PUBLIC_URL}/images/Kickscooters Gallery/${image.image}`} /></SwiperSlide>)
         }
       </Swiper>
 

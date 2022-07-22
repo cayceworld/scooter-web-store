@@ -4,26 +4,17 @@ import "swiper/css/pagination";
 import 'swiper/css';
 import { getSelectedKickscooter } from '../../../redux/kickscooterRedux';
 import { useSelector } from 'react-redux';
-import { useState, useEffect } from 'react';
+
 import Gallery from './Gallery';
 import Gift from '../../views/Gift/Gift';
 import ProductInfo from '../../views/ProductInfo/ProductInfo';
+import PackingList from '../../views/PackingList/PackingList';
 
-const SelectedProduct = () => {
+const SelectedProduct = props => {
 
   const kickscooter = useSelector(getSelectedKickscooter);
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
-
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 768);
-  };
-
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
+  const isDesktop = props.isDesktop; 
 
 
 
@@ -92,21 +83,21 @@ const SelectedProduct = () => {
                 <span>Payment Methods: </span>Starting at $55/mo with <span> <img src={`${process.env.PUBLIC_URL}/images/logoA.svg`} /></span>. <span>Prequalify now</span>
               </p>
               <div className={styles.SelectedProduct__icons}>
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (1).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (2).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (3).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (4).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (5).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (6).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (7).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (8).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (9).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (10).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (11).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (12).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (13).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (14).svg `} />
-                <img src={`${process.env.PUBLIC_URL}/images/PaymentIco/Frame (15).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (2).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (3).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (4).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (1).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (5).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (6).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (7).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (8).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (9).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (10).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (11).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (12).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (13).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (14).svg `} />
+                <img src={`${process.env.PUBLIC_URL}/images/Payment Ico/Frame (15).svg `} />
               </div>
             </div>
           </div>
@@ -115,6 +106,7 @@ const SelectedProduct = () => {
           </div>}
         </div>
         <ProductInfo kickscooter={kickscooter} isDesktop={isDesktop}/>
+        <PackingList kickscooter={kickscooter}/>
       </div>
     </div>
   );

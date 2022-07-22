@@ -15,19 +15,19 @@ const ProductInfo = props => {
       selectedTabClassName={styles.ProductInfo__item_selected}>
       {isDesktop && <TabList className={styles.ProductInfo__titles}>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/delivery-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/delivery-title.svg`} />
           <div>{kickscooter.delivery.title}</div>
         </Tab>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/warranty-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/warranty-title.svg`} />
           <div>{kickscooter.warranty.title}</div>
         </Tab>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/support-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/support-title.svg`} />
           <div>{kickscooter.support.title}</div>
         </Tab>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/description-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/description-title.svg`} />
           <div>{kickscooter.description.title}</div>
         </Tab>
       </TabList>}
@@ -39,7 +39,7 @@ const ProductInfo = props => {
             <div className={styles.ProductInfo__text}>{kickscooter.delivery.text}</div>
           </div>
           <div className={styles.ProductInfo__box}>
-            <div><img src={`${process.env.PUBLIC_URL}/images/InfoIcons/${kickscooter.delivery.ico}`} /></div>
+            <div><img src={`${process.env.PUBLIC_URL}/images/Info Icons/${kickscooter.delivery.ico}`} /></div>
           </div>
         </div>
       </TabPanel>
@@ -67,7 +67,7 @@ const ProductInfo = props => {
           <div className={styles.ProductInfo__box}>
             <div className={styles.ProductInfo__ico}>
               <div>
-                <div><img src={`${process.env.PUBLIC_URL}/images/InfoIcons/${kickscooter.support.ico}`} /></div>
+                <div><img src={`${process.env.PUBLIC_URL}/images/Info Icons/${kickscooter.support.ico}`} /></div>
               </div>
             </div>
           </div>
@@ -92,19 +92,19 @@ const ProductInfo = props => {
 
       {!isDesktop && <TabList className={styles.ProductInfo__titles}>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/delivery-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/delivery-title.svg`} />
           <div>{kickscooter.delivery.title}</div>
         </Tab>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/warranty-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/warranty-title.svg`} />
           <div>{kickscooter.warranty.title}</div>
         </Tab>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/support-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/support-title.svg`} />
           <div>{kickscooter.support.title}</div>
         </Tab>
         <Tab className={styles.ProductInfo__item}>
-          <img src={`${process.env.PUBLIC_URL}/images/InfoIcons/description-title.svg`} />
+          <img src={`${process.env.PUBLIC_URL}/images/Info Icons/description-title.svg`} />
           <div>{kickscooter.description.title}</div>
         </Tab>
       </TabList>}

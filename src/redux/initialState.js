@@ -45,6 +45,8 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '40'
       },
+      packingList: 'PL KS ES1L .png',
+      youtubeVideo: 'POWN_h5r_Ac',
     },
     {
       id: '2',
@@ -91,6 +93,8 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '50'
       },
+      packingList: 'default.png',
+      youtubeVideo: '39BZxtm8u7A',
     },
     {
       id: '3',
@@ -128,6 +132,7 @@ const initialState = {
         text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
         miles: '25'
       },
+      packingList: 'default.png',
     },
     {
       id: '4',
@@ -169,6 +174,7 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '40'
       },
+      packingList: 'default.png',
     },
     {
       id: '5',
@@ -210,6 +216,7 @@ const initialState = {
         text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
         miles: '25'
       },
+      packingList: 'default.png',
     },
     {
       id: '6',
@@ -251,6 +258,7 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '40'
       },
+      packingList: 'default.png',
     },
     {
       id: '7',
@@ -292,6 +300,7 @@ const initialState = {
         text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
         miles: '25'
       },
+      packingList: 'default.png',
     },
     {
       id: '8',
@@ -333,6 +342,7 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '40'
       },
+      packingList: 'default.png',
     },
     {
       id: '9',
@@ -374,6 +384,7 @@ const initialState = {
         text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
         miles: '25'
       },
+      packingList: 'default.png',
     },
     {
       id: '10',
@@ -415,6 +426,7 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '40'
       },
+      packingList: 'default.png',
     },
     {
       id: '11',
@@ -456,6 +468,7 @@ const initialState = {
         text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
         miles: '25'
       },
+      packingList: 'default.png',
     },
     {
       id: '12',
@@ -497,6 +510,7 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '40'
       },
+      packingList: 'default.png',
     },
     {
       id: '13',
@@ -538,6 +552,7 @@ const initialState = {
         text: 'Molestiae non soluta voluptatem quaerat tenetur impedit nulla necessitatibus amet ut dolorum distinctio nam cum voluptatum rerum ipsa corrupti.',
         miles: '25'
       },
+      packingList: 'default.png',
     },
     {
       id: '14',
@@ -579,6 +594,7 @@ const initialState = {
         text: 'With a range of up to 40 miles, the longest range on the market, and a 20˚uphill climbing angle, the KickScooter MAX allows you to ride from San Francisco Bay Area to Palo Alto on a single charge.',
         miles: '40'
       },
+      packingList: 'default.png',
     },
   ],
 

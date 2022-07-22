@@ -13,7 +13,9 @@ const DesktopProducts = props => {
       <div className={styles.container}>
         <div className={styles.products__wrapper}>
           {kickscooters.map(kickscooter =>
-            <Product key={kickscooter.id} id={kickscooter.id} title={kickscooter.title} image={kickscooter.image} isSelect={kickscooter.isSelect} />
+            <Product key={kickscooter.id} id={kickscooter.id}
+              title={kickscooter.title} image={kickscooter.image}
+              isSelect={kickscooter.isSelect} />
           )}
         </div>
       </div>

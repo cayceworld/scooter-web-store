@@ -2,7 +2,10 @@
 @import '../../../styles/global.scss';
 @import '../../../styles//typography.scss';
 
-
+.SelectedProduct{
+  position: relative;
+  background: linear-gradient(0deg, #EEEEEE 0%, rgba(245, 245, 245, 0.79) 43.81%, rgba(255, 255, 255, 0) 82.46%);
+}
 
 .SelectedProduct__wrapper {
   display: flex;

@@ -32,7 +32,19 @@
   }
 
   .MobileNavigation {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .MobileNavigation__burger {
+      cursor: pointer;
+      z-index: 15;
+      width: 40px;
+      color: $burgerMenuIcoColor;
+    }
   }
 
   .navlinks {
@@ -73,25 +85,6 @@
     background-color: $burgerNavBarColor;
     border: none;
 
-    .Navigation {
-      display: none;
-    }
-
-    .MobileNavigation {
-      display: flex;
-      flex-wrap: wrap;
-      flex: 1 1 100%;
-      align-items: center;
-      justify-content: space-between;
-
-
-      .MobileNavigation__burger {
-        cursor: pointer;
-        z-index: 15;
-        width: 40px;
-        color: $burgerMenuIcoColor;
-      }
-    }
 
     .navlinks {
       position: fixed;
