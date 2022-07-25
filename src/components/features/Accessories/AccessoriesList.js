@@ -1,10 +1,13 @@
 import DesktopAccessories from "./DesktopAccessories";
 import MobileAccessories from './MobileAccessories';
 import styles from './AccessoriesList.module.scss';
+import { useSelector } from 'react-redux';
+import { getDevice } from '../../../redux/deviseRedux';
 
-const AccessoriesList = props => {
+const AccessoriesList = () => {
 
-  const isDesktop = props.isDesktop; 
+  const device = useSelector(getDevice);
+  const isDesktop = device.isDesktop; 
 
 
 

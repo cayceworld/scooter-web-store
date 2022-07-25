@@ -1,20 +1,22 @@
 import Navbar from "../../views/Navbar/Navbar";
-import ProductsList from "../../features/ProductsList/ProductsList";
 import LogoSection from "../../views/LogoSection/LogoSection";
+import { useSelector } from 'react-redux';
+import { getDevice } from '../../../redux/deviseRedux';
 
 
 
 
+const Header = () => {
 
-const Header = props => {
+  const device = useSelector(getDevice);
+  const isDesktop = device.isDesktop; 
 
-  const isDesktop = props.isDesktop; 
+
 
   return (
     <>
       <Navbar isDesktop={isDesktop}/>
       <LogoSection />
-      <ProductsList />
     </>
   );
 }

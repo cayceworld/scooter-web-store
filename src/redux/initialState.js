@@ -674,8 +674,12 @@ const initialState = {
 
 
   ],
+
   cart: [
 
-  ]
+  ],
+
+  device: []
+
 }
 export default initialState; 

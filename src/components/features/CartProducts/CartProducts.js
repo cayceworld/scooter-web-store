@@ -5,7 +5,7 @@ import styles from './CartProducts.module.scss';
 const CartProducts = () => {
 
   const cart = useSelector(getCartProducts)
-  //console.log(cart);
+  console.log(cart.length);
 
   let sum = 0;
 
@@ -15,19 +15,22 @@ const CartProducts = () => {
 
   return (
     <div className={styles.CartProducts}>
-      {cart.map(item =>
-        <div className={styles.CartProducts__item} key={item.id}>
-          <div className={styles.CartProducts__image}>
-            <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Kickscooters List/${item.image}`} />
+      {cart.length <= 0
+        ? <div>Cart is empty</div>
+        : cart.map(item =>
+          <div className={styles.CartProducts__item} key={item.id}>
+            <div className={styles.CartProducts__image}>
+              <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Kickscooters List/${item.image}`} />
+            </div>
+            <div className={styles.CartProducts__title}> {item.title}</div>
+            <div className={styles.CartProducts__price}> ${item.price}</div>
           </div>
-          <div className={styles.CartProducts__title}> {item.title}</div>
-          <div className={styles.CartProducts__price}> ${item.price}</div>
-        </div>
-      )}
-      <div className={styles.CartProducts__totalPrice}>
+        )
+      }
+      {cart.length > 0 && <div className={styles.CartProducts__totalPrice}>
         <div>Total Price:</div>
         <div>${sum}</div>
-      </div>
+      </div>}
     </div>
 
 

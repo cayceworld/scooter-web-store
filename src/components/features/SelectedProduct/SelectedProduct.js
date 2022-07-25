@@ -10,15 +10,17 @@ import Gift from '../../views/Gift/Gift';
 import ProductInfo from '../../views/ProductInfo/ProductInfo';
 import PackingList from '../../views/PackingList/PackingList';
 import { addToCart, getCartProducts } from '../../../redux/cartRedux';
+import { getDevice } from '../../../redux/deviseRedux';
 
-const SelectedProduct = props => {
+
+const SelectedProduct = () => {
 
   const kickscooter = useSelector(getSelectedKickscooter);
   const cart = useSelector(getCartProducts);
 
+  const device = useSelector(getDevice);
+  const isDesktop = device.isDesktop; 
 
-
-  const isDesktop = props.isDesktop;
 
   const dispatch = useDispatch();
 
@@ -27,9 +29,11 @@ const SelectedProduct = props => {
       title: kickscooter.title, id: kickscooter.id,
       image: kickscooter.image, price: kickscooter.price
     }))
-
   }
-  //console.log(cart);
+
+
+
+
 
 
 

@@ -3,28 +3,24 @@ import SelectedProduct from "../../features/SelectedProduct/SelectedProduct";
 import styles from './Main.module.scss';
 import Footer from '../../layout/Footer/Footer';
 import AccessoriesList from '../../features/Accessories/AccessoriesList';
-import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { getDevice } from '../../../redux/deviseRedux';
+import ProductsList from "../../features/ProductsList/ProductsList";
 
 const Main = () => {
 
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 768);
+  const device = useSelector(getDevice);
+  const isDesktop = device.isDesktop;
 
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 768);
-  };
+  //console.log('isDesktop', isDesktop);
 
-
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
 
 
   return (
     <div className={styles.Main}>
-      <Header isDesktop={isDesktop} />
-      <SelectedProduct isDesktop={isDesktop} />
-      <AccessoriesList isDesktop={isDesktop} />
+      <ProductsList />
+      <SelectedProduct />
+      <AccessoriesList />
       <Footer />
     </div>
   );

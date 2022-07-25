@@ -9,7 +9,7 @@ import { getCartProducts } from '../../../redux/cartRedux';
 const NavIcons = () => {
 
   const cart = useSelector(getCartProducts);
-  console.log('lenght:', cart.length)
+  //console.log('length:', cart.length)
 
   return (
     <ul className={styles.navicons}>
@@ -24,7 +24,7 @@ const NavIcons = () => {
 
       </li>
       <li className={clsx(styles.navicons__item, styles.navicons__cartIco)}>
-        <a href="#"><img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/cart.svg`} /></a>
+        <a href="cart"><img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/cart.svg`} /></a>
         {cart.length > 0 && <div className={styles.navicons__cartQuantity}> {cart.length} </div>}
         <div className={styles.navicons__cartBox}>
           <CartProducts />

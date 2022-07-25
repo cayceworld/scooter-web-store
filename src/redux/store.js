@@ -3,11 +3,13 @@ import initialState from './initialState.js';
 import kickscooterReducer from './kickscooterRedux';
 import accessoriesReducer from './accessoriesRedux';
 import cartReducer from './cartRedux.js';
+import deviceReducer from './deviseRedux.js'
 
 const subreducers = {
   kickscooters: kickscooterReducer,
   accessories: accessoriesReducer, 
   cart: cartReducer, 
+  device: deviceReducer, 
 
 }
 
