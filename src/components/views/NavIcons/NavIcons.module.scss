@@ -21,12 +21,31 @@
   }
 }
 
+.navicons__phone {
+  display: block;
+}
+
+.navicons__img,
+.navicons__phone {
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    transition: all 0.5s;
+  }
+
+  &:active {
+    transform: scale(0.7, 0.7);
+  }
+}
+
 .navicons__img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(135deg) brightness(103%) contrast(102%);
   height: 24px;
 }
 
-.navicons__number {
+
+.navicons__phone {
   color: $burgerLinkColor;
   font-weight: 400;
   font-size: 18px;
@@ -40,18 +59,61 @@
 }
 
 
+/// cart ///
+.navicons__cartIco {
+  position: relative;
+
+  &:hover {
+    .navicons__cartBox {
+      display: block;
+    }
+  }
+
+  .navicons__cartBox {
+    box-shadow: 5px 5px 25px -13px rgba(66, 68, 90, 1);
+    border-radius: 3px;
+    background-color: $white;
+    width: 252px;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 110%;
+    display: none;
+
+    button {
+      padding: 6px;
+      font-size: 14px;
+    }
+  }
+
+  .navicons__cartQuantity {
+    position: absolute;
+    color: white;
+    background-color: $blue;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    top: -20%;
+    right: -20%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @include for-laptop-l {
   .navicons {
     gap: 9px;
   }
 
-  .navicons__number {
+  .navicons__phone {
     font-size: 16px;
   }
 }
 
 @include for-laptop {
-  .navicons__number {
+  .navicons__phone {
     display: none;
   }
 
@@ -79,8 +141,9 @@
     }
   }
 }
-@include for-mobile-l{
+
+@include for-mobile-l {
   .navicons {
-    gap: 5px;
+    //gap: 8px;
   }
 }

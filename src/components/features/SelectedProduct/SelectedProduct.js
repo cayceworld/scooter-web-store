@@ -3,21 +3,33 @@ import styles from './SelectedProduct.module.scss';
 import "swiper/css/pagination";
 import 'swiper/css';
 import { getSelectedKickscooter } from '../../../redux/kickscooterRedux';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import Gallery from './Gallery';
 import Gift from '../../views/Gift/Gift';
 import ProductInfo from '../../views/ProductInfo/ProductInfo';
 import PackingList from '../../views/PackingList/PackingList';
+import { addToCart, getCartProducts } from '../../../redux/cartRedux';
 
 const SelectedProduct = props => {
 
   const kickscooter = useSelector(getSelectedKickscooter);
-
-  const isDesktop = props.isDesktop; 
-
+  const cart = useSelector(getCartProducts);
 
 
+
+  const isDesktop = props.isDesktop;
+
+  const dispatch = useDispatch();
+
+  const addProduct = () => {
+    dispatch(addToCart({
+      title: kickscooter.title, id: kickscooter.id,
+      image: kickscooter.image, price: kickscooter.price
+    }))
+
+  }
+  //console.log(cart);
 
 
 
@@ -38,7 +50,7 @@ const SelectedProduct = props => {
             {!isDesktop && <div className={styles.SelectedProduct__gallery}>
               <Gallery kickscooter={kickscooter} />
             </div>}
-            {!isDesktop && <Gift gift={kickscooter.gift}/>}
+            {!isDesktop && <Gift gift={kickscooter.gift} />}
             <div className={styles.SelectedProduct__deal}>
               <div className={styles.SelectedProduct__extend}>
                 <p className={styles.SelectedProduct__subtitle}>
@@ -46,18 +58,18 @@ const SelectedProduct = props => {
                 </p>
                 <div className={styles.SelectedProduct__boxes}>
                   <div className={styles.SelectedProduct__box}>
-                    <div>1 Year</div> 
-                    <span>-</span> 
+                    <div>1 Year</div>
+                    <span>-</span>
                     <div>${Math.ceil(kickscooter.price / 6)}</div>
                   </div>
                   <div className={styles.SelectedProduct__box}>
-                    <div>2 Year</div> 
-                    <span>-</span> 
+                    <div>2 Year</div>
+                    <span>-</span>
                     <div>${Math.ceil(kickscooter.price / 4)}</div>
                   </div>
                   <div className={styles.SelectedProduct__box}>
-                    <div>3 Year</div> 
-                    <span>-</span> 
+                    <div>3 Year</div>
+                    <span>-</span>
                     <div>${Math.ceil(kickscooter.price / 3)}</div>
                   </div>
                 </div>
@@ -71,11 +83,11 @@ const SelectedProduct = props => {
                     ${kickscooter.price}
                   </p>
                 </div>
-                  { isDesktop && <Gift gift={kickscooter.gift}/>}
+                {isDesktop && <Gift gift={kickscooter.gift} />}
               </div>
               <div className={styles.SelectedProduct__buttons}>
-                <Button children='buy it now' />
-                <Button children='add to card' />
+                <div onClick={addProduct}><Button children='buy it now' /></div>
+                <div onClick={addProduct}><Button children='add to card' /></div>
               </div>
             </div>
             <div className={styles.SelectedProduct__payment}>
@@ -105,8 +117,8 @@ const SelectedProduct = props => {
             <Gallery kickscooter={kickscooter} />
           </div>}
         </div>
-        <ProductInfo kickscooter={kickscooter} isDesktop={isDesktop}/>
-        <PackingList kickscooter={kickscooter}/>
+        <ProductInfo kickscooter={kickscooter} isDesktop={isDesktop} />
+        <PackingList kickscooter={kickscooter} />
       </div>
     </div>
   );

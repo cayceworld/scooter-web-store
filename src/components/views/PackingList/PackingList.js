@@ -13,7 +13,7 @@ const PackingList = props => {
       <div className={clsx(styles.PackingList__wrapper, !kickscooter.youtubeVideo && styles.PackingList__wrapper_noVideo)}>
         {kickscooter.youtubeVideo && <div className={styles.PackingList__video}>
           <h1 className={styles.PackingList__title}>Packing List</h1>
-          <div>
+{/*           <div>
             <iframe
               width="100%"
               height="278"
@@ -23,7 +23,7 @@ const PackingList = props => {
               allowFullScreen
               title="Embedded youtube"
             />
-          </div>
+          </div> */}
         </div>}
         <div className={styles.PackingList__image}>
           <div>

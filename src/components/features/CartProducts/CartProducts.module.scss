@@ -1,0 +1,42 @@
+@import '../../../styles/variables';
+
+.CartProducts {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.CartProducts__item {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid $black;
+  .CartProducts__image {
+    img{
+      height: 50px;
+    }
+
+  }
+
+  .CartProducts__title {
+    width: 100%;
+
+
+  }
+
+  .CartProducts__price {
+    font-weight: 700;
+  }
+}
+.CartProducts__totalPrice{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  div:last-child{
+    font-weight: 700;
+  }
+
+}

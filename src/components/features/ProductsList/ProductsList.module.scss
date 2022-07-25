@@ -46,8 +46,16 @@
   }
 }
 
+.products__item:hover{
+  background-color: #009dff13;
+}
+
 .products__item_active {
   background-color: $blue;
+
+  &:hover{
+    background-color: $blue;
+  }
 
   .products__title {
     color: $white;
