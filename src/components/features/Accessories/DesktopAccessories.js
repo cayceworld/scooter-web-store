@@ -16,7 +16,7 @@ const DesktopAccessories = () => {
       {accessories.map(accessory =>
         <Accessory key={accessory.id} id={accessory.id}
           title={accessory.title} image={accessory.image}
-          description={accessory.description} price={accessory.price} />
+          description={accessory.description} price={accessory.price} inStock={accessory.inStock}/>
       )}
     </div>
   );

@@ -10,6 +10,8 @@ import ProductInfo from '../../views/ProductInfo/ProductInfo';
 import PackingList from '../../views/PackingList/PackingList';
 import { addToCart, getCartProducts } from '../../../redux/cartRedux';
 import { getDevice } from '../../../redux/deviseRedux';
+import { NavLink } from 'react-router-dom';
+import clsx from 'clsx';
 
 
 const SelectedProduct = () => {
@@ -31,6 +33,7 @@ const SelectedProduct = () => {
   }
 
 
+  //console.log(kickscooter);
 
 
 
@@ -89,8 +92,16 @@ const SelectedProduct = () => {
                 {isDesktop && <Gift gift={kickscooter.gift} />}
               </div>
               <div className={styles.SelectedProduct__buttons}>
-                <button className={styles.btn} onClick={addProduct}>buy it now</button>
-                <button className={styles.btn} onClick={addProduct}>add to card</button>
+                <div>
+                  <NavLink to="/cart">
+                    <button className={clsx(styles.btn, kickscooter.inStock <= 0 && styles.btn_disabled)}
+                      onClick={addProduct} disabled={kickscooter.inStock <= 0 ? true : false}>buy it now</button>
+                  </NavLink>
+                </div>
+                <div>
+                  <button className={clsx(styles.btn, kickscooter.inStock <= 0 && styles.btn_disabled)}
+                    onClick={addProduct} disabled={kickscooter.inStock <= 0 ? true : false}>add to card</button>
+                </div>
               </div>
             </div>
             <div className={styles.SelectedProduct__payment}>

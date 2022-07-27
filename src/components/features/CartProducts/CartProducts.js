@@ -5,7 +5,7 @@ import styles from './CartProducts.module.scss';
 const CartProducts = () => {
 
   const cart = useSelector(getCartProducts)
-  console.log(cart.length);
+  //console.log(cart.length);
 
   let sum = 0;
 

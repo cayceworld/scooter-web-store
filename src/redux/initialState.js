@@ -621,7 +621,7 @@ const initialState = {
       description: 'The curved, streamlined design of the helmet shell, coupled with the thick, high-quality fabrics create a helmet that is stylish, protective and comfortable to wear.',
       price: 29,
       image: 'Segway Protective Gear Set.svg',
-      inStock: 0
+      inStock: 5
     },
     {
       id: '4',
@@ -653,7 +653,7 @@ const initialState = {
       description: 'Whether at home, the office, or on your KickScooter journey, this Ninebot KickScooter by Segway Charger is designed to provide a safe and stable charge anytime, anywhere.',
       price: 69,
       image: 'Segway Scooter Bag.svg',
-      inStock: 0
+      inStock: 1
     },
     {
       id: '8',

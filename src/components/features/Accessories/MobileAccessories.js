@@ -9,6 +9,7 @@ const MobileAccessories = () => {
 
   const accessories = useSelector(getAllAccessories);
 
+
   return (
     <Swiper className={styles.swiper}
       spaceBetween={20}
@@ -18,11 +19,11 @@ const MobileAccessories = () => {
       grabCursor={true}
     >
       {accessories.map(accessory =>
-        <SwiperSlide className={styles.swiper__slide}><Accessory
-          key={accessory.id} id={accessory.id}
-          title={accessory.title} image={accessory.image}
-          description={accessory.description} price={accessory.price}
-        /></SwiperSlide>
+        <SwiperSlide className={styles.swiper__slide} key={accessory.id}>
+          <Accessory
+            id={accessory.id} title={accessory.title} image={accessory.image}
+            description={accessory.description} price={accessory.price}  inStock={accessory.inStock}/>
+        </SwiperSlide>
       )}
     </Swiper>
   );
