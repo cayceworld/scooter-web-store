@@ -1,4 +1,3 @@
-import Button from '../../common/Button/Button';
 import styles from './AccessoriesList.module.scss';
 
 const Accessory = props => {
@@ -15,7 +14,8 @@ const showInConsole = () => {
       <div className={styles.Accessory__description}>{props.description}</div>
       <div className={styles.Accessory__price}>${props.price}</div>
       <div className={styles.Accessory__button}>
-        <Button children={'add to card'}/>
+
+        <button className={styles.btn}>add to card</button>
       </div>
     </div>
    );

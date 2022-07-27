@@ -1,4 +1,3 @@
-import Button from '../../common/Button/Button';
 import styles from './SelectedProduct.module.scss';
 import "swiper/css/pagination";
 import 'swiper/css';
@@ -19,7 +18,7 @@ const SelectedProduct = () => {
   const cart = useSelector(getCartProducts);
 
   const device = useSelector(getDevice);
-  const isDesktop = device.isDesktop; 
+  const isDesktop = device.isDesktop;
 
 
   const dispatch = useDispatch();
@@ -90,8 +89,8 @@ const SelectedProduct = () => {
                 {isDesktop && <Gift gift={kickscooter.gift} />}
               </div>
               <div className={styles.SelectedProduct__buttons}>
-                <div onClick={addProduct}><Button children='buy it now' /></div>
-                <div onClick={addProduct}><Button children='add to card' /></div>
+                <button className={styles.btn} onClick={addProduct}>buy it now</button>
+                <button className={styles.btn} onClick={addProduct}>add to card</button>
               </div>
             </div>
             <div className={styles.SelectedProduct__payment}>

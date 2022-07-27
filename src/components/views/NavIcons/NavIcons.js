@@ -1,6 +1,5 @@
 import styles from './NavIcons.module.scss';
 import clsx from 'clsx'
-import Button from '../../common/Button/Button';
 import CartProducts from '../../features/CartProducts/CartProducts';
 import { useSelector } from 'react-redux';
 import { getCartProducts } from '../../../redux/cartRedux';
@@ -29,7 +28,7 @@ const NavIcons = () => {
         {cart.length > 0 && <div className={styles.navicons__cartQuantity}> {cart.length} </div>}
         <div className={styles.navicons__cartBox}>
           <CartProducts />
-          <NavLink to="/cart"><Button children="go to cart" /></NavLink>
+          <NavLink to="/cart"> <button className={styles.btn}>go to cart</button></NavLink>
         </div>
       </li>
     </ul>
