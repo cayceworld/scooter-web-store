@@ -4,6 +4,7 @@ import Button from '../../common/Button/Button';
 import CartProducts from '../../features/CartProducts/CartProducts';
 import { useSelector } from 'react-redux';
 import { getCartProducts } from '../../../redux/cartRedux';
+import { NavLink } from "react-router-dom";
 
 
 const NavIcons = () => {
@@ -24,11 +25,11 @@ const NavIcons = () => {
 
       </li>
       <li className={clsx(styles.navicons__item, styles.navicons__cartIco)}>
-        <a href="cart"><img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/cart.svg`} /></a>
+        <NavLink to="/cart"> <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/cart.svg`} /></NavLink>
         {cart.length > 0 && <div className={styles.navicons__cartQuantity}> {cart.length} </div>}
         <div className={styles.navicons__cartBox}>
           <CartProducts />
-          <Button children="buy" />
+          <NavLink to="/cart"><Button children="go to cart" /></NavLink>
         </div>
       </li>
     </ul>

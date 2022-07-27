@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getDevice } from './redux/deviseRedux';
 import { useState, useEffect } from 'react';
 import { windowResize } from './redux/deviseRedux';
+import NotFound from './components/pages/NotFound/NotFound';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
     <>
       <Header />
       <Routes>
+        <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Main />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
