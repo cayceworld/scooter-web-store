@@ -8,29 +8,36 @@
 
 }
 
+.CartProducts__empty{
+  font-size: 13px;
+  line-height: 119.3%;
+  color: #999999;
+}
 .CartProducts__item {
   display: flex;
   align-items: center;
-  //justify-content: space-between;
+  justify-content: space-between;
   gap: 10px;
   border-bottom: 1px solid $black;
   .CartProducts__image {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 40%;
     img{
       height: 50px;
     }
-
   }
 
   .CartProducts__title {
-    width: 100%;
-
-
+    flex: 1 1 25%;
   }
 
   .CartProducts__price {
+    flex: 1 1 15%;
     font-weight: 700;
   }
 }
+
 .CartProducts__totalPrice{
   display: flex;
   justify-content: space-between;

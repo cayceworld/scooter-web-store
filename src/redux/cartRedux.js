@@ -1,3 +1,5 @@
+import shortid from "shortid";
+
 
 //selectors
 export const getCartProducts = state => state.cart; 
@@ -17,8 +19,8 @@ export const addToCart = payload => ({ type: ADD_TO_CART, payload });
 const cartReducer = (statePart = [], action) => {
   switch (action.type) {
     case ADD_TO_CART:
-      console.log(statePart);
-      return [...statePart, { ...action.payload }]; 
+      //console.log(statePart);
+      return [...statePart, { ...action.payload}]; 
     default:
       return statePart;
   };

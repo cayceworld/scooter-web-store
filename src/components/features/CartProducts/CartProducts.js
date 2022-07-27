@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { getCartProducts } from '../../../redux/cartRedux';
 import styles from './CartProducts.module.scss';
+import shortid from 'shortid';
 
 const CartProducts = () => {
 
@@ -16,11 +17,12 @@ const CartProducts = () => {
   return (
     <div className={styles.CartProducts}>
       {cart.length <= 0
-        ? <div>Cart is empty</div>
+        ? <div className={styles.CartProducts__empty} >Cart is empty</div>
         : cart.map(item =>
-          <div className={styles.CartProducts__item} key={item.id}>
+          <div className={styles.CartProducts__item} key={shortid.generate()}>
             <div className={styles.CartProducts__image}>
-              <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Kickscooters List/${item.image}`} />
+              {item.category === 'kickscooter' && <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Kickscooters List/${item.image}`} />}
+              {item.category === 'accessory' && <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Accessories/${item.image}`} />}
             </div>
             <div className={styles.CartProducts__title}> {item.title}</div>
             <div className={styles.CartProducts__price}> ${item.price}</div>

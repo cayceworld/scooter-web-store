@@ -434,7 +434,7 @@ const initialState = {
       price: 2540,
       image: 'EKS ZING E8.svg',
       isSelect: false,
-      inStock: 0,
+      inStock: 5,
       gitf: '',
       gallery: [
 

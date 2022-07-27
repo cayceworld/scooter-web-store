@@ -28,12 +28,12 @@ const SelectedProduct = () => {
   const addProduct = () => {
     dispatch(addToCart({
       title: kickscooter.title, id: kickscooter.id,
-      image: kickscooter.image, price: kickscooter.price
+      image: kickscooter.image, price: kickscooter.price, category: 'kickscooter'
     }))
   }
 
 
-  //console.log(kickscooter);
+  console.log(cart);
 
 
 
