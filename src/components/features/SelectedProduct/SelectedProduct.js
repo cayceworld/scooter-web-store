@@ -8,16 +8,18 @@ import Gallery from './Gallery';
 import Gift from '../../views/Gift/Gift';
 import ProductInfo from '../../views/ProductInfo/ProductInfo';
 import PackingList from '../../views/PackingList/PackingList';
-import { addToCart, getCartProducts } from '../../../redux/cartRedux';
+import { addToCart, getCartProducts, addAmount } from '../../../redux/cartRedux';
 import { getDevice } from '../../../redux/deviseRedux';
 import { NavLink } from 'react-router-dom';
 import clsx from 'clsx';
 
 
+
 const SelectedProduct = () => {
 
-  const kickscooter = useSelector(getSelectedKickscooter);
   const cart = useSelector(getCartProducts);
+  const kickscooter = useSelector(getSelectedKickscooter);
+
 
   const device = useSelector(getDevice);
   const isDesktop = device.isDesktop;
@@ -25,15 +27,31 @@ const SelectedProduct = () => {
 
   const dispatch = useDispatch();
 
+
+
   const addProduct = () => {
-    dispatch(addToCart({
-      title: kickscooter.title, id: kickscooter.id,
-      image: kickscooter.image, price: kickscooter.price, category: 'kickscooter'
-    }))
+
+    if (cart.length == 0) {
+      dispatch(addToCart({
+        title: kickscooter.title, id: kickscooter.id,
+        image: kickscooter.image, price: kickscooter.price, category: 'kickscooter', amount: 1
+      }))
+    } else {
+      const filterCart = cart.find(item => item.id == kickscooter.id);
+
+      if (filterCart == undefined) {
+        dispatch(addToCart({
+          title: kickscooter.title, id: kickscooter.id,
+          image: kickscooter.image, price: kickscooter.price, category: 'kickscooter', amount: 1
+        }))
+      } else {
+        dispatch(addAmount({ id: kickscooter.id, amount: 1 }))
+      }
+    }
   }
 
 
-  console.log(cart);
+
 
 
 

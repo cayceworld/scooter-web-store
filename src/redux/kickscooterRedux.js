@@ -18,7 +18,7 @@ export const toggleSelect = payload => ({ type: TOGGLE_KICKSCOOTER_SELECT, paylo
 const kickscooterReducer = (statePart = [], action) => {
   switch (action.type) {
     case TOGGLE_KICKSCOOTER_SELECT:
-      return statePart.map(kickscooter => (kickscooter.id === action.payload.id) ? { ...kickscooter, isSelect: !kickscooter.isSelect } : { ...kickscooter, isSelect: false });
+      return statePart.map(kickscooter => (kickscooter.id === action.payload.id) ? { ...kickscooter, isSelect: true } : { ...kickscooter, isSelect: false });
     default:
       return statePart;
   };

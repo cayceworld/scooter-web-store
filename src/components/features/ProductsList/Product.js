@@ -13,9 +13,10 @@ const Product = props => {
     if (selectedKickscooter.id != props.id) {
       dispatch(toggleSelect({ id: props.id, isSelect: props.isSelect }))
     }
+    //console.log(props);
   }
 
-
+//console.log(props);
 
 
   return (

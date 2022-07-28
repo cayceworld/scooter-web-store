@@ -25,6 +25,7 @@ const CartProducts = () => {
               {item.category === 'accessory' && <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Accessories/${item.image}`} />}
             </div>
             <div className={styles.CartProducts__title}> {item.title}</div>
+            <div className={styles.CartProducts__amount}>{item.amount}</div>
             <div className={styles.CartProducts__price}> ${item.price}</div>
           </div>
         )
@@ -34,7 +35,6 @@ const CartProducts = () => {
         <div>${sum}</div>
       </div>}
     </div>
-
 
   );
 }

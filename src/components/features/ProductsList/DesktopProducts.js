@@ -4,7 +4,7 @@ import { getAllKickscooters } from "../../../redux/kickscooterRedux";
 import Product from './Product';
 
 
-const DesktopProducts = props => {
+const DesktopProducts = () => {
   const kickscooters = useSelector(getAllKickscooters);
 
 

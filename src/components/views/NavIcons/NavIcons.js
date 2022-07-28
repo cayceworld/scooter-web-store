@@ -11,6 +11,9 @@ const NavIcons = () => {
   const cart = useSelector(getCartProducts);
   //console.log('length:', cart.length)
 
+  // sum of all items in cart 
+  const cartItemsAmount = cart.map(item => item.amount).reduce((prev, curr) => prev + curr, 0)
+
   return (
     <ul className={styles.navicons}>
       <li className={styles.navicons__item}>
@@ -25,7 +28,7 @@ const NavIcons = () => {
       </li>
       <li className={clsx(styles.navicons__item, styles.navicons__cartIco)}>
         <NavLink to="/cart"> <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/cart.svg`} /></NavLink>
-        {cart.length > 0 && <div className={styles.navicons__cartQuantity}> {cart.length} </div>}
+        {cart.length > 0 && <div className={styles.navicons__cartQuantity}> {cartItemsAmount} </div>}
         <div className={styles.navicons__cartBox}>
           <CartProducts />
           <NavLink to="/cart"> <button className={styles.btn}>go to cart</button></NavLink>
