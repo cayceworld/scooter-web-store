@@ -1,7 +1,8 @@
 import { useDispatch } from 'react-redux';
 import styles from './CartProducts.module.scss';
-import { addAmount, removeAmount } from '../../../redux/cartRedux';
+import { addAmount, removeAmount, removeItem } from '../../../redux/cartRedux';
 import clsx from 'clsx';
+import { BsFillTrashFill } from 'react-icons/bs';
 
 const CartProduct = props => {
 
@@ -14,13 +15,15 @@ const CartProduct = props => {
     if (item.amount < 10) {
       dispatch(addAmount({ id: item.id, amount: 1 }))
     }
-
-
   }
 
   const removeOne = () => {
     if (item.amount > 1)
       dispatch(removeAmount({ id: item.id, amount: 1 }))
+  }
+
+  const remove = () => {
+    dispatch(removeItem({ id: item.id }))
   }
 
 
@@ -38,7 +41,8 @@ const CartProduct = props => {
           <div onClick={removeOne} className={clsx(item.amount == 1 && styles.CartProduct__change_disabled)} > - </div>
         </div>
       </div>
-      <div className={styles.CartProduct__price}> ${item.price* item.amount}</div>
+      <div className={styles.CartProduct__price}> ${item.price * item.amount}</div>
+      <BsFillTrashFill onClick={remove} className={styles.CartProduct__icon} size='20px' />
     </div>
   );
 }
