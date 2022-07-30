@@ -71,11 +71,13 @@
   }
 
   .navicons__cartBox {
+    overflow: auto;
     box-shadow: 5px 5px 25px -13px rgba(66, 68, 90, 1);
     border-radius: 3px;
     background-color: $white;
     width: 300px;
-    padding: 15px;
+    height: 280px;
+    padding: 25px;
     position: absolute;
     right: -20%;
     top: 100%;

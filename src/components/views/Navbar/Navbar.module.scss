@@ -45,6 +45,9 @@
       width: 40px;
       color: $burgerMenuIcoColor;
     }
+    .MobileNavigation__icons{
+      z-index: 15;
+    }
   }
 
   .navlinks {

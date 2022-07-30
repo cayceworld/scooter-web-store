@@ -19,14 +19,17 @@ const MobileNavigation = () => {
   }, [open]);
 
 
+
   return (
     <nav className={styles.MobileNavigation}>
       <TbMenu2 onClick={() => setOpen(!open)} className={styles.MobileNavigation__burger} size='40px' />
       <div className={styles.MobileNavigation__logo}>
         <Logo />
       </div>
-      <NavIcons />
-      {open && <NavLinks />}
+      <div onClick={() => setOpen(!open)} className={styles.MobileNavigation__icons}><NavIcons /> </div>
+      {open && <div onClick={() => setOpen(!open)}>
+        <NavLinks />
+      </div>}
     </nav>
   );
 }

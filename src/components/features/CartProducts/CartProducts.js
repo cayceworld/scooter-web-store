@@ -16,7 +16,7 @@ const CartProducts = () => {
     sum += (item.price * item.amount);
   })
 
-  console.log(cart);
+  //console.log(cart);
 
 
 
