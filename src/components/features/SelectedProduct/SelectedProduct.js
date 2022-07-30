@@ -52,7 +52,7 @@ const SelectedProduct = () => {
     }
   }
 
-  //console.log(cart)
+
 
 
 
