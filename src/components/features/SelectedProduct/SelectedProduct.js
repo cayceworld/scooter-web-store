@@ -52,14 +52,6 @@ const SelectedProduct = () => {
     }
   }
 
-
-
-
-
-
-
-
-
   return (
     <div className={styles.SelectedProduct}>
       <div className={styles.container}>
