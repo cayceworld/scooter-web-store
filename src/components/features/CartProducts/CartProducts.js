@@ -1,33 +1,35 @@
 import { useSelector } from 'react-redux';
 import { getCartProducts } from '../../../redux/cartRedux';
 import styles from './CartProducts.module.scss';
+import '../../../../node_modules/rc-input-number/assets/index.css';
+import CartProduct from './CartProduct';
 import shortid from 'shortid';
+
 
 const CartProducts = () => {
 
-  const cart = useSelector(getCartProducts)
-  //console.log(cart.length);
+  const cart = useSelector(getCartProducts);
 
   let sum = 0;
 
   cart.forEach(item => {
-    sum += item.price;
+    sum += (item.price * item.amount);
   })
+
+  console.log(cart);
+
+
+
 
   return (
     <div className={styles.CartProducts}>
       {cart.length <= 0
         ? <div className={styles.CartProducts__empty} >Cart is empty</div>
         : cart.map(item =>
-          <div className={styles.CartProducts__item} key={shortid.generate()}>
-            <div className={styles.CartProducts__image}>
-              {item.category === 'kickscooter' && <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Kickscooters List/${item.image}`} />}
-              {item.category === 'accessory' && <img className={styles.navicons__img} src={`${process.env.PUBLIC_URL}/images/Accessories/${item.image}`} />}
-            </div>
-            <div className={styles.CartProducts__title}> {item.title}</div>
-            <div className={styles.CartProducts__amount}>{item.amount}</div>
-            <div className={styles.CartProducts__price}> ${item.price}</div>
-          </div>
+          <CartProduct key={shortid.generate()}
+            image={item.image} title={item.title}
+            amount={item.amount} price={item.price}
+            category={item.category} id={item.id} />
         )
       }
       {cart.length > 0 && <div className={styles.CartProducts__totalPrice}>

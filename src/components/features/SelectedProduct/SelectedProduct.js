@@ -44,12 +44,15 @@ const SelectedProduct = () => {
           title: kickscooter.title, id: kickscooter.id,
           image: kickscooter.image, price: kickscooter.price, category: 'kickscooter', amount: 1
         }))
-      } else {
+        console.log('onemore')
+      } else if (filterCart.amount <= 9) {
         dispatch(addAmount({ id: kickscooter.id, amount: 1 }))
+        console.log('onemore')
       }
     }
   }
 
+  //console.log(cart)
 
 
 
