@@ -12,13 +12,13 @@ const CartProduct = props => {
 
   const addOne = () => {
     console.log(item.amount)
-    if (item.amount < 10) {
+    if (item.amount < 10 && item.amount < item.inStock) {
       dispatch(addAmount({ id: item.id, amount: 1 }))
     }
   }
 
   const removeOne = () => {
-    if (item.amount > 1)
+    if (item.amount > 1 )
       dispatch(removeAmount({ id: item.id, amount: 1 }))
   }
 

@@ -16,7 +16,7 @@ const CartProducts = () => {
     sum += (item.price * item.amount);
   })
 
-  //console.log(cart);
+
 
 
 
@@ -29,7 +29,7 @@ const CartProducts = () => {
           <CartProduct key={shortid.generate()}
             image={item.image} title={item.title}
             amount={item.amount} price={item.price}
-            category={item.category} id={item.id} />
+            category={item.category} id={item.id} inStock={item.inStock}/>
         )
       }
       {cart.length > 0 && <div className={styles.CartProducts__totalPrice}>

@@ -49,6 +49,24 @@
 }
 
 
+// put footer bottom
+.root {
+  height: 100%;
+
+  .app {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .app__content {
+      flex: 1 1 auto;
+    }
+  }
+}
+
+
+
+
 @include for-laptop {
   .container {
     padding: 0 20px;

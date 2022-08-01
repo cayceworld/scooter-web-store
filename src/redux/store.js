@@ -4,12 +4,14 @@ import kickscooterReducer from './kickscooterRedux';
 import accessoriesReducer from './accessoriesRedux';
 import cartReducer from './cartRedux.js';
 import deviceReducer from './deviseRedux.js'
+import ordersReducer from './ordersRedux.js';
 
 const subreducers = {
   kickscooters: kickscooterReducer,
   accessories: accessoriesReducer, 
   cart: cartReducer, 
   device: deviceReducer, 
+  orders: ordersReducer
 
 }
 

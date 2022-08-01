@@ -6,7 +6,7 @@ const initialState = {
       price: 960,
       image: 'KS E22.svg',
       isSelect: true,
-      inStock: 19,
+      inStock: 10,
       gift: 'Segway Protective Gear Set',
       gallery: [
 
@@ -54,7 +54,7 @@ const initialState = {
       price: 760,
       image: 'KS ES1l.svg',
       isSelect: false,
-      inStock: 25,
+      inStock: 2,
       gift: 'Segway Charger',
       gallery: [
 
@@ -679,7 +679,9 @@ const initialState = {
 
   ],
 
-  device: []
+  device: [],
+
+  orders: [],
 
 }
 export default initialState; 

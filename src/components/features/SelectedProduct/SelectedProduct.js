@@ -30,26 +30,17 @@ const SelectedProduct = () => {
 
 
   const addProduct = () => {
+    const addedItem = cart.find(item => item.id == kickscooter.id);
 
-    if (cart.length == 0) {
+    if (addedItem == undefined) {
       dispatch(addToCart({
         title: kickscooter.title, id: kickscooter.id,
-        image: kickscooter.image, price: kickscooter.price, category: 'kickscooter', amount: 1
+        image: kickscooter.image, price: kickscooter.price, category: 'kickscooter', amount: 1, inStock: kickscooter.inStock
       }))
-    } else {
-      const filterCart = cart.find(item => item.id == kickscooter.id);
-
-      if (filterCart == undefined) {
-        dispatch(addToCart({
-          title: kickscooter.title, id: kickscooter.id,
-          image: kickscooter.image, price: kickscooter.price, category: 'kickscooter', amount: 1
-        }))
-        console.log('onemore')
-      } else if (filterCart.amount <= 9) {
-        dispatch(addAmount({ id: kickscooter.id, amount: 1 }))
-        console.log('onemore')
-      }
+    } else if (addedItem.amount <= 9 && addedItem.amount < kickscooter.inStock) {
+      dispatch(addAmount({ id: kickscooter.id, amount: 1 }))
     }
+    //console.log(kickscooter)
   }
 
   return (

@@ -1,7 +1,6 @@
 import Header from '../../layout/Header/Header';
 import SelectedProduct from "../../features/SelectedProduct/SelectedProduct";
 import styles from './Main.module.scss';
-import Footer from '../../layout/Footer/Footer';
 import AccessoriesList from '../../features/Accessories/AccessoriesList';
 import { useSelector } from 'react-redux';
 import { getDevice } from '../../../redux/deviseRedux';
@@ -21,7 +20,6 @@ const Main = () => {
       <ProductsList />
       <SelectedProduct />
       <AccessoriesList />
-      <Footer />
     </div>
   );
 }

@@ -7,6 +7,8 @@ import { getDevice } from './redux/deviseRedux';
 import { useState, useEffect } from 'react';
 import { windowResize } from './redux/deviseRedux';
 import NotFound from './components/pages/NotFound/NotFound';
+import Footer from './components/layout/Footer/Footer';
+import styles from './styles/global.scss'
 
 function App() {
 
@@ -35,14 +37,17 @@ function App() {
   //console.log('width', width)
 
   return (
-    <>
+    <div className='app'>
       <Header />
-      <Routes>
-        <Route path="*" element={<NotFound />} />
-        <Route path="/" element={<Main />} />
-        <Route path="/cart" element={<Cart />} />
-      </Routes>
-    </>
+      <div className='app__content'>
+        <Routes >
+          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
+      <Footer />
+    </div>
   );
 }
 
