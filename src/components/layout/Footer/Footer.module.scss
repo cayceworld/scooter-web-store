@@ -17,6 +17,11 @@
     max-height: 50px;
     width: 100%;
     filter: invert(21%) sepia(9%) saturate(23%) hue-rotate(103deg) brightness(102%) contrast(89%);
+
+  }
+
+  .Footer__logo{
+    z-index: 1;
   }
 }
 

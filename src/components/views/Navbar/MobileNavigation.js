@@ -26,8 +26,8 @@ const MobileNavigation = () => {
       <div className={styles.MobileNavigation__logo}>
         <Logo />
       </div>
-      <div onClick={() => setOpen(!open)} className={styles.MobileNavigation__icons}><NavIcons /> </div>
-      {open && <div onClick={() => setOpen(!open)}>
+      <div onClick={() => setOpen(false)} className={styles.MobileNavigation__icons}><NavIcons /> </div>
+      {open && <div onClick={() => setOpen(false)} className={styles.navlinks}>
         <NavLinks />
       </div>}
     </nav>

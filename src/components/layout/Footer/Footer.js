@@ -7,7 +7,9 @@ const Footer = () => {
       <div className={styles.container}>
 
         <div className={styles.Footer__wrapper}>
-          <Logo />
+          <div className={styles.Footer__logo}>
+            <Logo />
+          </div>
           <div className={styles.Footer__text}>
             <div>+1 (888) 777-77-77</div>
             <div>2637 Fairfax Ave

@@ -676,7 +676,15 @@ const initialState = {
   ],
 
   cart: [
-
+/*     {
+      amount: 1,
+      category: "kickscooter",
+      id: "1",
+      image: "KS E22.svg",
+      inStock: 19,
+      price: 960,
+      title: "KS E22",
+    } */
   ],
 
   device: [],
