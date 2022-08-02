@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, getCartProducts } from '../../../redux/cartRedux';
 import { addToOrders, getOrders } from '../../../redux/ordersRedux';
 import { useState } from 'react';
-import { getAllKickscooters, updateAmount } from '../../../redux/kickscooterRedux';
+import { getAllKickscooters, updateAmountRequest } from '../../../redux/kickscooterRedux';
 const Cart = () => {
 
 
@@ -23,23 +23,14 @@ const Cart = () => {
     dispatch(clearCart());
     cart.map(item => {
       if (item.category == 'kickscooter') {
-        //console.log(item);
-        dispatch(updateAmount({ id: item.id, amount: item.amount }));
-        //console.log('kick')
+        dispatch(updateAmountRequest({ id: item.id, inStock: item.inStock - item.amount }));
       } else if (item.category == 'accessory') {
         //console.log('acc')
       }
-
-
     })
-
   }
-  console.log('orders', orders.length);
-  console.log('cart', cart.length);
 
-  const kickscooters = useSelector(getAllKickscooters);
 
-  // console.log(kickscooters);
 
 
 

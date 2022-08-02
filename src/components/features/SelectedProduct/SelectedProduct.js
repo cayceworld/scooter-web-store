@@ -1,9 +1,8 @@
 import styles from './SelectedProduct.module.scss';
 import "swiper/css/pagination";
 import 'swiper/css';
-import { getSelectedKickscooter } from '../../../redux/kickscooterRedux';
+import { getAllKickscooters, getSelectedKickscooter } from '../../../redux/kickscooterRedux';
 import { useDispatch, useSelector } from 'react-redux';
-
 import Gallery from './Gallery';
 import Gift from '../../views/Gift/Gift';
 import ProductInfo from '../../views/ProductInfo/ProductInfo';
@@ -18,8 +17,8 @@ import clsx from 'clsx';
 const SelectedProduct = () => {
 
   const cart = useSelector(getCartProducts);
+  const kickscooters = useSelector(getAllKickscooters);
   const kickscooter = useSelector(getSelectedKickscooter);
-
 
   const device = useSelector(getDevice);
   const isDesktop = device.isDesktop;
@@ -40,11 +39,13 @@ const SelectedProduct = () => {
     } else if (addedItem.amount <= 9 && addedItem.amount < kickscooter.inStock) {
       dispatch(addAmount({ id: kickscooter.id, amount: 1 }))
     }
-    //console.log(kickscooter)
   }
 
+  console.log('state.kickscooters:',kickscooters)
+
   return (
-    <div className={styles.SelectedProduct}>
+   
+    kickscooter && <div className={styles.SelectedProduct}>
       <div className={styles.container}>
         <div className={styles.SelectedProduct__wrapper} >
           <div className={styles.SelectedProduct__content}>

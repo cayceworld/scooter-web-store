@@ -11,7 +11,7 @@ const CartProduct = props => {
   const dispatch = useDispatch();
 
   const addOne = () => {
-    console.log(item.amount)
+    //console.log(item.amount)
     if (item.amount < 10 && item.amount < item.inStock) {
       dispatch(addAmount({ id: item.id, amount: 1 }))
     }

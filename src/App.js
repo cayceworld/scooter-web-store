@@ -8,9 +8,17 @@ import { useState, useEffect } from 'react';
 import { windowResize } from './redux/deviseRedux';
 import NotFound from './components/pages/NotFound/NotFound';
 import Footer from './components/layout/Footer/Footer';
-import styles from './styles/global.scss'
+import { fetchKickscooters } from './redux/kickscooterRedux';
 
 function App() {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => dispatch(fetchKickscooters()), [dispatch]);
+
+
+
+
 
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -24,15 +32,11 @@ function App() {
 
 
   const isDesktop = width >= 768;
-
-  const dispatch = useDispatch();
-
   const sizeChange = (e) => {
     dispatch(windowResize({ isDesktop }));
   };
 
   //const device = useSelector(getDevice);
-
   //console.log('device', device);
   //console.log('width', width)
 
