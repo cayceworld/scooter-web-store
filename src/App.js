@@ -3,6 +3,7 @@ import Header from "./components/layout/Header/Header";
 import Main from "./components/pages/Main/Main";
 import Cart from './components/pages/Cart/Cart';
 import { useDispatch, useSelector } from 'react-redux';
+import AccessoriesList from './components/features/Accessories/AccessoriesList';
 import { getDevice } from './redux/deviseRedux';
 import { useState, useEffect } from 'react';
 import { windowResize } from './redux/deviseRedux';
@@ -12,6 +13,7 @@ import { fetchKickscooters } from './redux/kickscooterRedux';
 import { fetchAccessories } from './redux/accessoriesRedux';
 import OrderStatus from './components/pages/OrderStatus/OrderStatus';
 import { fetchOrders } from './redux/ordersRedux';
+import Info from './components/pages/Info/Info';
 
 function App() {
 
@@ -53,7 +55,9 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Main />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/accessories" element={<AccessoriesList />} />
           <Route path="/orders" element={<OrderStatus />} />
+          <Route path="/info" element={<Info />}/>
         </Routes>
       </div>
       <Footer />

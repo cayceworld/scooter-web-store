@@ -9,7 +9,7 @@
   gap: 16px;
   flex: 1 1 30%;
   justify-content: space-between;
-  height: 450px;
+
 
 
 
@@ -66,4 +66,8 @@
   margin-top: 63px;
 }
 
-@include for-tablet {}
+@include for-tablet {
+  .Accessory {
+    height: 450px;
+  }
+}
