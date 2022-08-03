@@ -599,7 +599,7 @@
       "description": "Whether at home, the office, or on your KickScooter journey, this Ninebot KickScooter by Segway Charger is designed to provide a safe and stable charge anytime, anywhere.",
       "price": 69,
       "image": "Segway Scooter Bag.svg",
-      "inStock": 1
+      "inStock": 0
     },
     {
       "id": "8a",
@@ -676,6 +676,25 @@
         ""
       ],
       "id": "obicNSXB2"
+    },
+    {
+      "items": [
+        {
+          "title": "Segway Scooter Bag",
+          "id": "7a",
+          "image": "Segway Scooter Bag.svg",
+          "price": 69,
+          "category": "accessory",
+          "amount": 1,
+          "inStock": 1
+        }
+      ],
+      "userInfo": [
+        "",
+        "",
+        ""
+      ],
+      "id": "xHs_YJ3gp"
     }
   ]
 }

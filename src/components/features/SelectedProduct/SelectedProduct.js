@@ -1,7 +1,7 @@
 import styles from './SelectedProduct.module.scss';
 import "swiper/css/pagination";
 import 'swiper/css';
-import { getAllKickscooters, getSelectedKickscooter } from '../../../redux/kickscooterRedux';
+import { getSelectedKickscooter } from '../../../redux/kickscooterRedux';
 import { useDispatch, useSelector } from 'react-redux';
 import Gallery from './Gallery';
 import Gift from '../../views/Gift/Gift';
@@ -17,7 +17,6 @@ import clsx from 'clsx';
 const SelectedProduct = () => {
 
   const cart = useSelector(getCartProducts);
-  const kickscooters = useSelector(getAllKickscooters);
   const kickscooter = useSelector(getSelectedKickscooter);
 
   const device = useSelector(getDevice);
@@ -40,8 +39,6 @@ const SelectedProduct = () => {
       dispatch(addAmount({ id: kickscooter.id, amount: 1 }))
     }
   }
-
-  console.log('state.kickscooters:',kickscooters)
 
   return (
    

@@ -2,7 +2,7 @@ import CartProducts from '../../features/CartProducts/CartProducts';
 import styles from './Cart.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, getCartProducts } from '../../../redux/cartRedux';
-import { addOrder, getOrders } from '../../../redux/ordersRedux';
+import { addOrder } from '../../../redux/ordersRedux';
 import { useState } from 'react';
 import { updateAmountKickscooterRequest } from '../../../redux/kickscooterRedux';
 import { updateAmountAccessoryRequest } from '../../../redux/accessoriesRedux';
@@ -17,7 +17,6 @@ const Cart = () => {
 
 
   const cart = useSelector(getCartProducts);
-  const orders = useSelector(getOrders);
   const dispatch = useDispatch();
 
 

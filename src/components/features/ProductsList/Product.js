@@ -13,11 +13,7 @@ const Product = props => {
     if (selectedKickscooter.id != props.id) {
       dispatch(toggleSelect({ id: props.id, isSelect: props.isSelect }))
     }
-    //console.log(props);
   }
-
-//console.log(props);
-
 
   return (
     <div onClick={toggle} key={props.id} className={clsx(styles.products__item, props.isSelect && styles.products__item_active)}>

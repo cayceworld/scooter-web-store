@@ -16,7 +16,6 @@ const LOAD_ACCESSORIES = createActionName('LOAD_ACCESSORIES');
 // action creators
 export const loadAccessories = payload => ({ type: LOAD_ACCESSORIES, payload });
 export const fetchAccessories = () => {
-  console.log("fetchAccessories")
   return (dispatch) => {
     fetch(`${API_URL}/accessories`)
       .then(res => res.json())
@@ -24,8 +23,6 @@ export const fetchAccessories = () => {
   }
 };
 export const updateAmountAccessoryRequest = (accessory) => {
-  console.log("accessory", accessory);
-  console.log("updateAmountAccessoryRequest")
   return () => {
     const options = {
       method: 'PATCH',

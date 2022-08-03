@@ -7,7 +7,7 @@ const ProductInfo = props => {
 
   const kickscooter = props.kickscooter;
   const isDesktop = props.isDesktop;
-  //console.log(props);
+
 
   return (
     <Tabs

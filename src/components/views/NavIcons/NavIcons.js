@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 const NavIcons = () => {
 
   const cart = useSelector(getCartProducts);
-  //console.log('length:', cart.length)
+
 
   // sum of all items in cart 
   const cartItemsAmount = cart.map(item => item.amount).reduce((prev, curr) => prev + curr, 0)

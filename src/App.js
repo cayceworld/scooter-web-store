@@ -44,9 +44,6 @@ function App() {
     dispatch(windowResize({ isDesktop }));
   };
 
-  //const device = useSelector(getDevice);
-  //console.log('device', device);
-  //console.log('width', width)
 
   return (
     <div className='app'>

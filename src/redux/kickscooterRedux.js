@@ -18,7 +18,6 @@ export const toggleSelect = payload => ({ type: TOGGLE_KICKSCOOTER_SELECT, paylo
 
 export const loadKickscooters = payload => ({ type: LOAD_KICKSCOOTERS, payload });
 export const fetchKickscooters = () => {
-  console.log("fetchKickscooters")
   return (dispatch) => {
     fetch(`${API_URL}/kickscooters`)
       .then(res => res.json())
@@ -26,8 +25,6 @@ export const fetchKickscooters = () => {
   }
 };
 export const updateAmountKickscooterRequest = (kickscooter) => {
-  //console.log("kickscooter", kickscooter);
-  //console.log("updateAmountRequest")
   return () => {
     const options = {
       method: 'PATCH',

@@ -16,11 +16,6 @@ const CartProducts = () => {
     sum += (item.price * item.amount);
   })
 
-
-
-
-
-
   return (
     <div className={styles.CartProducts}>
       {cart.length <= 0

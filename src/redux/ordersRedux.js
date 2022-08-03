@@ -17,7 +17,6 @@ export const loadOrders = payload => ({ type: LOAD_ORDERS, payload });
 
 
 export const fetchOrders = () => {
-  console.log("fetchOrders")
   return (dispatch) => {
     fetch(`${API_URL}/orders`)
       .then(res => res.json())

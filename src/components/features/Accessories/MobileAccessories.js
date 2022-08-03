@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-//import 'swiper/css';
 import { useSelector } from 'react-redux';
 import { getAllAccessories } from '../../../redux/accessoriesRedux';
 import Accessory from './Accessory';
