@@ -9,7 +9,7 @@ const DesktopProducts = () => {
 
 
   return (
-    <div className={styles.DesktopProducts}>
+    <>{kickscooters.length > 0 && <div className={styles.DesktopProducts}>
       <div className={styles.container}>
         <div className={styles.products__wrapper}>
           {kickscooters.map(kickscooter =>
@@ -20,7 +20,8 @@ const DesktopProducts = () => {
         </div>
       </div>
       <div className={styles.products__subtitle}>Free 1 day shipping within California.</div>
-    </div >
+    </div >}
+    </>
   );
 }
 

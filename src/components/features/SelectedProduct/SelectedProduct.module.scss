@@ -173,6 +173,11 @@
   }
 }
 
+.SelectedProduct__loading{
+  display: flex;
+  justify-content: center;
+}
+
 
 @media (min-width: 1100px) {
   .SelectedProduct__content {

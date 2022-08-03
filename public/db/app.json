@@ -6,7 +6,7 @@
       "price": 960,
       "image": "KS E22.svg",
       "isSelect": true,
-      "inStock": 100,
+      "inStock": 97,
       "gift": "Segway Protective Gear Set",
       "gallery": [
         {
@@ -695,6 +695,44 @@
         ""
       ],
       "id": "xHs_YJ3gp"
+    },
+    {
+      "items": [
+        {
+          "title": "KS E22",
+          "id": "1",
+          "image": "KS E22.svg",
+          "price": 960,
+          "category": "kickscooter",
+          "amount": 3,
+          "inStock": 100
+        }
+      ],
+      "userInfo": [
+        "",
+        "",
+        ""
+      ],
+      "id": "ofKYwBCAM"
+    },
+    {
+      "items": [
+        {
+          "title": "KS ES1l",
+          "id": "2",
+          "image": "KS ES1l.svg",
+          "price": 760,
+          "category": "kickscooter",
+          "amount": 1,
+          "inStock": 18
+        }
+      ],
+      "userInfo": [
+        "",
+        "",
+        ""
+      ],
+      "id": "rCcFwNMmb"
     }
   ]
 }
