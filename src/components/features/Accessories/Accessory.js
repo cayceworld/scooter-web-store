@@ -14,24 +14,15 @@ const Accessory = props => {
 
   const addProduct = () => {
 
-    if (cart.length == 0) {
+    const addedItem = cart.find(item => item.id == accessory.id);
+
+    if (addedItem == undefined) {
       dispatch(addToCart({
         title: accessory.title, id: accessory.id,
-        image: accessory.image, price: accessory.price, category: 'accessory', amount: 1
+        image: accessory.image, price: accessory.price, category: 'accessory', amount: 1, inStock: accessory.inStock
       }))
-    } else {
-      const filterCart = cart.find(item => item.id == accessory.id);
-
-      if (filterCart == undefined) {
-        dispatch(addToCart({
-          title: accessory.title, id: accessory.id,
-          image: accessory.image, price: accessory.price, category: 'accessory', amount: 1
-        }))
-        console.log('onemore')
-      } else if (filterCart.amount <= 9) {
-        dispatch(addAmount({ id: accessory.id, amount: 1 }))
-        console.log('onemore')
-      }
+    } else if (addedItem.amount <= 9 && addedItem.amount < addedItem.inStock) {
+      dispatch(addAmount({ id: accessory.id, amount: 1 }))
     }
   }
 

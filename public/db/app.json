@@ -62,7 +62,7 @@
       "price": 760,
       "image": "KS ES1l.svg",
       "isSelect": false,
-      "inStock": 20,
+      "inStock": 18,
       "gift": "Segway Charger",
       "gallery": [
         {
@@ -551,7 +551,7 @@
       "description": "The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle accelerator, brake, speed, and other signals",
       "price": 149,
       "image": "NineboT Engine Speaker.svg",
-      "inStock": 2
+      "inStock": 1
     },
     {
       "id": "2a",
@@ -559,7 +559,7 @@
       "description": "The Extension Rod helps you to easily maneuver your scooter, so you no longer need to bend over and push it, making it easier to take with you anywhere.",
       "price": 29,
       "image": "ExtensionRod.svg",
-      "inStock": 0
+      "inStock": 3
     },
     {
       "id": "3a",
@@ -575,7 +575,7 @@
       "description": "The Ninebot leisure backpack adopts a stylish gray-yellow color contrast, adding a trendy accessory to your wardrobe.",
       "price": 69,
       "image": "Ninebot Leisure Backpack.svg",
-      "inStock": 0
+      "inStock": 1
     },
     {
       "id": "5a",
@@ -619,6 +619,63 @@
     }
   ],
   "cart": [],
-  "device": [],
-  "orders": []
+  "orders": [
+    {
+      "items": [
+        {
+          "title": "KS ES1l",
+          "id": "2",
+          "image": "KS ES1l.svg",
+          "price": 760,
+          "category": "kickscooter",
+          "amount": 1,
+          "inStock": 19
+        }
+      ],
+      "userInfo": [
+        "",
+        "",
+        ""
+      ],
+      "id": "TL9MuZSGK"
+    },
+    {
+      "items": [
+        {
+          "title": "KS E22",
+          "id": "1",
+          "image": "KS E22.svg",
+          "price": 960,
+          "category": "kickscooter",
+          "amount": 1,
+          "inStock": 100
+        }
+      ],
+      "userInfo": [
+        "",
+        "",
+        ""
+      ],
+      "id": "-ocMDNka6"
+    },
+    {
+      "items": [
+        {
+          "title": "KS E22",
+          "id": "1",
+          "image": "KS E22.svg",
+          "price": 960,
+          "category": "kickscooter",
+          "amount": 1,
+          "inStock": 100
+        }
+      ],
+      "userInfo": [
+        "",
+        "",
+        ""
+      ],
+      "id": "obicNSXB2"
+    }
+  ]
 }

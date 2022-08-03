@@ -25,9 +25,9 @@ export const fetchKickscooters = () => {
       .then(kickscooters => dispatch(loadKickscooters(kickscooters)));
   }
 };
-export const updateAmountRequest = (kickscooter) => {
-  console.log("kickscooter", kickscooter);
-  console.log("updateAmountRequest")
+export const updateAmountKickscooterRequest = (kickscooter) => {
+  //console.log("kickscooter", kickscooter);
+  //console.log("updateAmountRequest")
   return () => {
     const options = {
       method: 'PATCH',
@@ -37,6 +37,7 @@ export const updateAmountRequest = (kickscooter) => {
       body: JSON.stringify(kickscooter),
     };
     fetch(`${API_URL}/kickscooters/${kickscooter.id}`, options)
+      .then(res => console.log('res', res))
   }
 }
 
@@ -51,7 +52,7 @@ const kickscooterReducer = (statePart = [], action) => {
       console.log(statePart);
       return statePart.map(kickscooter => (kickscooter.id === action.payload.id) ? { ...kickscooter, isSelect: true } : { ...kickscooter, isSelect: false });
     case LOAD_KICKSCOOTERS:
-      console.log('db', action.payload);
+      console.log('db.kickscooters:', action.payload);
       return [...action.payload]
     default:
       return statePart;

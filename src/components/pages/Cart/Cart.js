@@ -2,9 +2,12 @@ import CartProducts from '../../features/CartProducts/CartProducts';
 import styles from './Cart.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart, getCartProducts } from '../../../redux/cartRedux';
-import { addToOrders, getOrders } from '../../../redux/ordersRedux';
+import { addOrder, getOrders } from '../../../redux/ordersRedux';
 import { useState } from 'react';
-import { getAllKickscooters, updateAmountRequest } from '../../../redux/kickscooterRedux';
+import { updateAmountKickscooterRequest } from '../../../redux/kickscooterRedux';
+import { updateAmountAccessoryRequest } from '../../../redux/accessoriesRedux';
+import shortid from 'shortid';
+
 const Cart = () => {
 
 
@@ -17,18 +20,20 @@ const Cart = () => {
   const orders = useSelector(getOrders);
   const dispatch = useDispatch();
 
+
   const submit = e => {
     e.preventDefault();
-    dispatch(addToOrders({ items: cart, userInfo: [name, phone, address] }));
+    dispatch(addOrder({ items: cart, userInfo: [name, phone, address], id: shortid.generate() }));
     dispatch(clearCart());
     cart.map(item => {
       if (item.category == 'kickscooter') {
-        dispatch(updateAmountRequest({ id: item.id, inStock: item.inStock - item.amount }));
+        dispatch(updateAmountKickscooterRequest({ id: item.id, inStock: item.inStock - item.amount }));
       } else if (item.category == 'accessory') {
-        //console.log('acc')
+        dispatch(updateAmountAccessoryRequest({ id: item.id, inStock: item.inStock - item.amount }));
       }
     })
   }
+
 
 
 

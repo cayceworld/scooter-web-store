@@ -9,12 +9,20 @@ import { windowResize } from './redux/deviseRedux';
 import NotFound from './components/pages/NotFound/NotFound';
 import Footer from './components/layout/Footer/Footer';
 import { fetchKickscooters } from './redux/kickscooterRedux';
+import { fetchAccessories } from './redux/accessoriesRedux';
+import OrderStatus from './components/pages/OrderStatus/OrderStatus';
+import { fetchOrders } from './redux/ordersRedux';
 
 function App() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => dispatch(fetchKickscooters()), [dispatch]);
+  useEffect(() =>
+    dispatch(fetchKickscooters()),
+    dispatch(fetchAccessories()),
+    dispatch(fetchOrders()),
+
+    [dispatch]);
 
 
 
@@ -48,6 +56,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Main />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/orders" element={<OrderStatus />} />
         </Routes>
       </div>
       <Footer />
