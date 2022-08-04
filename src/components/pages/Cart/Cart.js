@@ -8,6 +8,7 @@ import { updateAmountKickscooterRequest } from '../../../redux/kickscooterRedux'
 import { updateAmountAccessoryRequest } from '../../../redux/accessoriesRedux';
 import shortid from 'shortid';
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
 
@@ -21,10 +22,14 @@ const Cart = () => {
 
   const { register, handleSubmit: validate, formState: { errors } } = useForm();
 
+  const navigate = useNavigate();
+
+  const goToOrderPage = () => {
+    navigate('/ordersList')
+  }
 
   const submit = () => {
-    dispatch(addOrder({ items: cart, userInfo: [name, phone, address], id: shortid.generate() }));
-    dispatch(clearCart());
+    dispatch(addOrder({ items: cart, userInfo: [name, phone, address], id: shortid.generate() }, goToOrderPage));
     cart.map(item => {
       if (item.category == 'kickscooter') {
         dispatch(updateAmountKickscooterRequest({ id: item.id, inStock: item.inStock - item.amount }));
@@ -32,6 +37,7 @@ const Cart = () => {
         dispatch(updateAmountAccessoryRequest({ id: item.id, inStock: item.inStock - item.amount }));
       }
     })
+    dispatch(clearCart());
   }
 
 

@@ -1,2 +1,1 @@
 export const API_URL = process.env.NODE_ENV === 'production' ?  '/api' : 'http://localhost:3131/api';
-export const ORDERS_URL = process.env.NODE_ENV === 'production' ?  '/orders' : 'http://localhost:3000/orders';

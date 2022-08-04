@@ -1,4 +1,4 @@
-import { API_URL, ORDERS_URL } from "../config";
+import { API_URL } from "../config";
 
 
 //selectors
@@ -24,7 +24,7 @@ export const fetchOrders = () => {
   }
 };
 
-export const addOrder = (order) => {
+export const addOrder = (order, goToOrderPage) => {
   console.log("order", order);
   return () => {
     const options = {
@@ -35,7 +35,7 @@ export const addOrder = (order) => {
       body: JSON.stringify(order),
     };
     fetch(`${API_URL}/orders/`, options)
-    .then(window.location.href = `${ORDERS_URL}`)
+    .then(goToOrderPage())
   }
 }
 
