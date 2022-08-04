@@ -71,3 +71,15 @@
     height: 450px;
   }
 }
+
+@include for-mobile-l{
+  .Accessory {
+    height: 480px;
+  }
+}
+
+@include for-mobile-m{
+  .Accessory {
+    height: 500px;
+  }
+}
