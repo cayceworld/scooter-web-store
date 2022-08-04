@@ -25,7 +25,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const goToOrderPage = () => {
-    navigate('/ordersList')
+    navigate('/orders')
   }
 
   const submit = () => {
