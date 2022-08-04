@@ -56,6 +56,7 @@
   }
 }
 
+
 .DesktopAccessories {
   display: flex;
   flex-wrap: wrap;
@@ -68,18 +69,36 @@
 
 @include for-tablet {
   .Accessory {
-    height: 450px;
+    height: 420px;
+
+    .Accessory__image {
+      width: 110px;
+      height: 110px;
+
+      img {
+        height: 110px;
+        width: 110px;
+
+      }
+    }
   }
 }
 
-@include for-mobile-l{
+
+@include for-mobile-l {
+  .Accessory {
+    height: 420px;
+
+    .Accessory__button {
+      button {
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+@include for-mobile-m {
   .Accessory {
     height: 480px;
-  }
-}
-
-@include for-mobile-m{
-  .Accessory {
-    height: 500px;
   }
 }

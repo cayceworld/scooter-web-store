@@ -2,9 +2,8 @@ import { Routes, Route } from 'react-router-dom';
 import Header from "./components/layout/Header/Header";
 import Main from "./components/pages/Main/Main";
 import Cart from './components/pages/Cart/Cart';
-import { useDispatch, useSelector } from 'react-redux';
-import AccessoriesList from './components/features/Accessories/AccessoriesList';
-import { getDevice } from './redux/deviseRedux';
+import { useDispatch } from 'react-redux';
+import AccessoriesPage from './components/pages/AccessoriesPage/AccessoriesPage';
 import { useState, useEffect } from 'react';
 import { windowResize } from './redux/deviseRedux';
 import NotFound from './components/pages/NotFound/NotFound';
@@ -55,9 +54,9 @@ function App() {
           <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Main />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/accessories" element={<AccessoriesList />} />
-          <Route path="/ordersList" element={<OrderStatus />} />
-          <Route path="/info" element={<Info />}/>
+          <Route path="/accessories" element={<AccessoriesPage />} />
+          <Route path="/orders" element={<OrderStatus />} />
+          <Route path="/info" element={<Info />} />
         </Routes>
       </div>
       <Footer />

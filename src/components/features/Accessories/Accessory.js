@@ -16,7 +16,7 @@ const Accessory = props => {
 
     const addedItem = cart.find(item => item.id == accessory.id);
 
-    if (addedItem == undefined) {
+    if (addedItem == undefined && accessory) {
       dispatch(addToCart({
         title: accessory.title, id: accessory.id,
         image: accessory.image, price: accessory.price, category: 'accessory', amount: 1, inStock: accessory.inStock
@@ -29,6 +29,7 @@ const Accessory = props => {
 
 
 
+
   return (
     <div className={styles.Accessory} >
       <div className={styles.Accessory__image}><img src={`${process.env.PUBLIC_URL}/images/Accessories/${accessory.image}`} /></div>
@@ -37,7 +38,7 @@ const Accessory = props => {
       <div className={styles.Accessory__price}>${accessory.price}</div>
       <div className={styles.Accessory__button}>
 
-        <button onClick={addProduct} className={clsx(styles.btn, accessory.inStock <= 0 && styles.btn_disabled)}>
+        <button onClick={addProduct} disabled={accessory.inStock <= 0 ? true : false} className={clsx(styles.btn, accessory.inStock <= 0 && styles.btn_disabled)}>
           add to card
         </button>
       </div>

@@ -11,7 +11,7 @@ const MobileAccessories = () => {
 
   return (
     <Swiper className={styles.swiper}
-      spaceBetween={20}
+      spaceBetween={10}
       slidesPerView={2.2}
       setWrapperSize={true}
       autoHeight={true}
