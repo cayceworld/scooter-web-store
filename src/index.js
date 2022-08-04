@@ -8,11 +8,13 @@ import './styles/normalize.scss';
 import './styles/global.scss';
 import './styles/settings.scss';
 import './styles/typography.scss';
+import ScrollToTop from './components/utils/ScrollToTop';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
+    <ScrollToTop />
       <Provider store={store}>
         <App />
       </Provider>

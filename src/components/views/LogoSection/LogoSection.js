@@ -13,8 +13,8 @@ const LogoSection = () => {
             </div>
             <div className={styles.LogoSection__text}>
               <h3>JOHN SMITH</h3>
-              <p >ask a question <br />
-                to the director</p>
+              <p >director<br />
+                of company </p>
             </div>
           </div>
         </div>
